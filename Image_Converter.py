@@ -18,12 +18,17 @@ outFileName = os.path.splitext(sys.argv[1])[0] + ".bmp"
 # mode L stands for 8-bit pixel, black and white
 
 if (len(sys.argv) == 4):
-    width = sys.argv[2]
-    height = sys.argv[3]
+    width = int(sys.argv[2])
+    height = int(sys.argv[3])
     outImage = image.convert("L").resize((width, height))
 elif (len(sys.argv) == 2):
     outImage = image.convert("L")
 else:
     print "Wrong numbers of arguments"
+
+print "After converting, the format is:"
+print "Format = ", outImage.format
+print "Size = ", outImage.size
+print "Mode = ", outImage.mode
 
 outImage.save(outFileName)
