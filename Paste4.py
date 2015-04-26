@@ -17,3 +17,5 @@ if (upLeft.size == upRight.size == downLeft.size == downRight.size):
     result.paste(downLeft, (0, upLeft.size[1]))
     result.paste(downRight, (upLeft.size[0], upLeft.size[1]))
     result.save("pasted.bmp")
+else:
+    print "The four images must have equal size"

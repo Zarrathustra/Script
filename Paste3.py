@@ -1,5 +1,5 @@
-# This script can paste two images together.
-# The two images must have equals size.
+# This script can paste three images together.
+# The three images must have equals size.
 
 import Image
 import os
