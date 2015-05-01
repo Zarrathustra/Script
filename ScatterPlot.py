@@ -1,3 +1,7 @@
+# argument 1 : the filename of input data
+# argument 2 : the xlabel
+# argument 3 : the ylabel
+
 import sys
 from pylab import *
 
@@ -17,13 +21,13 @@ figure(figsize = (10, 5), dpi = 80)
 
 colors = [float(y) for y in Y]
 
-scatter(X, Y, c = colors, s = 15, alpha = 0.5)
+scatter(X, Y, c = colors, s = 50, alpha = 0.5)
 
 xlim(0, int(X[-1]))
 ylim(0, 1)
 
-xlabel(sys.argv[1])
-ylabel(sys.argv[2])
+xlabel(sys.argv[2])
+ylabel(sys.argv[3])
 
-# savefig("FRCout.bmp", dpi = 200)
+savefig("FRCScatter.png", dpi = 200)
 show()
