@@ -21,7 +21,7 @@ figure(figsize = (10, 5), dpi = 80)
 
 colors = [float(y) for y in Y]
 
-scatter(X, Y, c = colors, s = 50, alpha = 0.5)
+plot(X, Y, linewidth = 2, alpha = 0.7)
 
 xlim(0, int(X[-1]))
 ylim(-1, 1)
@@ -29,5 +29,5 @@ ylim(-1, 1)
 xlabel(sys.argv[2])
 ylabel(sys.argv[3])
 
-savefig("CTFScatter.png", dpi = 200)
+savefig("CTF.png", dpi = 200)
 show()

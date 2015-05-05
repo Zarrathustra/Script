@@ -16,7 +16,7 @@ print "Mode = ", image.mode
 width = int(sys.argv[2])
 height = int(sys.argv[3])
 
-image = image.convert("RGB").resize((width, height))
+image = image.convert("RGBA").resize((width, height))
 
 print "After converting, the format is:"
 print "Format = ", image.format
