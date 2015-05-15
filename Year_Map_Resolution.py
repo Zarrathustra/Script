@@ -3,9 +3,6 @@ import matplotlib.patches as mpatches
 
 filename = "Year_Map_Resolution.csv"
 
-X = []
-Y = []
-
 # Data Reading and Checking 
 # Collecting and Cleaning Data
 lines = open(filename, "r").readlines();

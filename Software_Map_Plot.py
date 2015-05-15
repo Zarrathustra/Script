@@ -3,9 +3,6 @@ from pylab import *
 
 filename = "Software_Map.csv"
 
-X = []
-Y = []
-
 # Data Reading and Cleaning
 lines = open(filename, "r").readlines();
 X = [line.strip().split(",")[0] for line in lines]

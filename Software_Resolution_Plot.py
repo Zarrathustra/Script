@@ -4,9 +4,6 @@ import matplotlib.patches as mpatches
 
 filename = "Software_HighestResolution_AverageResolution.csv"
 
-X = []
-Y = []
-
 # Data Reading and Checking 
 lines = open(filename, "r").readlines();
 X = [line.strip().split(",")[0] for line in lines]
