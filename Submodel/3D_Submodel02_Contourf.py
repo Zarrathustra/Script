@@ -17,9 +17,8 @@ print size(Z)
 
 figure(figsize = (10, 10), dpi = 80)
 
-ct = contour(X, Y, Z, colors = "k", linewidth = 20)
-# ct = contourf(X, Y, Z, cmap = cm.bone, linewidth = 20)
+ctf = contourf(X, Y, Z, cmap = cm.hot, linewidth = 20)
 
-clabel(ct, fontsize = 15, inline = 1, fmt = "%3.0f", manual = True)
+clabel(ctf, colors = "k", fontsize = 15, inline = 1, fmt = "%3.0f", manual = True)
 
 show()

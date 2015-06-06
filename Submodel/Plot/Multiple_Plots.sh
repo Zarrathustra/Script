@@ -9,6 +9,7 @@ monoPlotData=(
 "Extend_General_Revenue.csv"
 "Lost_Demand.csv"
 )
+
 dualPlotData=(
 "Comparision_Demand00.csv"
 "Comparision_Demand01.csv"
