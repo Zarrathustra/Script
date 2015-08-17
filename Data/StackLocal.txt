@@ -1,0 +1,1850 @@
+Num of Columns:                 7676
+Num of Rows:                    7420
+Num of Slices(Frames):            32
+Mode:                              2
+Symmetry Data Size:           131072
+Reading stack from hard disk...
+
+Parameters of GPU Local Motion Correction.
+****** Parameter List ******
+Input:       ../gpuunittest/stack.mrc
+--help       0
+--verbose    1
+-box         ../gpuunittest/BoxFile.thubox
+-crx         3628
+-cry         3372
+-bin         2
+-nst         5
+-ned         31
+-nss         5
+-nes         31
+-gpu         0
+-bft         150
+-pbx         96
+-lsc         32
+-psc         512
+-fod         2
+-kit         1.000000
+-nrd         10
+-fgr         
+-fdr         
+-frs         
+-frt         
+-fcs         
+-fct         
+****** Parameter End ******
+
+GPU memory:  free:3532MB  total:3583MB
+
+Input Stack: Nx(7676) Ny(7420) Nz(32)
+Crop Image: Offset(3628 3372), Dim(4048 4048)
+
+Use GPU: #0 Tesla K10.G1.8GB
+......Crop, FT and bin frame #000  mean:0.631975
+......Crop, FT and bin frame #001  mean:0.629827
+......Crop, FT and bin frame #002  mean:0.630134
+......Crop, FT and bin frame #003  mean:0.630884
+......Crop, FT and bin frame #004  mean:0.630387
+......Crop, FT and bin frame #005  mean:0.630141
+......Crop, FT and bin frame #006  mean:0.630740
+......Crop, FT and bin frame #007  mean:0.630926
+......Crop, FT and bin frame #008  mean:0.630201
+......Crop, FT and bin frame #009  mean:0.631795
+......Crop, FT and bin frame #010  mean:0.632863
+......Crop, FT and bin frame #011  mean:0.632675
+......Crop, FT and bin frame #012  mean:0.631527
+......Crop, FT and bin frame #013  mean:0.631422
+......Crop, FT and bin frame #014  mean:0.633073
+......Crop, FT and bin frame #015  mean:0.631221
+......Crop, FT and bin frame #016  mean:0.631003
+......Crop, FT and bin frame #017  mean:0.632676
+......Crop, FT and bin frame #018  mean:0.631334
+......Crop, FT and bin frame #019  mean:0.632579
+......Crop, FT and bin frame #020  mean:0.633617
+......Crop, FT and bin frame #021  mean:0.632009
+......Crop, FT and bin frame #022  mean:0.631127
+......Crop, FT and bin frame #023  mean:0.629945
+......Crop, FT and bin frame #024  mean:0.629767
+......Crop, FT and bin frame #025  mean:0.632568
+......Crop, FT and bin frame #026  mean:0.631419
+......Crop, FT and bin frame #027  mean:0.632026
+......Crop, FT and bin frame #028  mean:0.631973
+......Crop, FT and bin frame #029  mean:0.632172
+......Crop, FT and bin frame #030  mean:0.632401
+......Crop, FT and bin frame #031  mean:0.632224
+
+Generate CC maps between pairs of frames:
+Boxing out local regions...
+
+FT, B-factor filtering and 2-binning local regions:
+......Preproccess local region of Frame #005
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #006
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #007
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #008
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #009
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #010
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #011
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #012
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #013
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #014
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #015
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #016
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #017
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #018
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #019
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #020
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #021
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #022
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #023
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #024
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #025
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #026
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #027
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #028
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #029
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #030
+GPU memory:  free:3506MB  total:3583MB
+......Preproccess local region of Frame #031
+GPU memory:  free:3506MB  total:3583MB
+......000 Frame #005 VS #007
+GPU memory:  free:3134MB  total:3583MB
+......001 Frame #005 VS #008
+GPU memory:  free:3134MB  total:3583MB
+......002 Frame #005 VS #009
+GPU memory:  free:3134MB  total:3583MB
+......003 Frame #005 VS #010
+GPU memory:  free:3134MB  total:3583MB
+......004 Frame #005 VS #011
+GPU memory:  free:3134MB  total:3583MB
+......005 Frame #005 VS #012
+GPU memory:  free:3134MB  total:3583MB
+......006 Frame #005 VS #013
+GPU memory:  free:3134MB  total:3583MB
+......007 Frame #005 VS #014
+GPU memory:  free:3134MB  total:3583MB
+......008 Frame #005 VS #015
+GPU memory:  free:3134MB  total:3583MB
+......009 Frame #005 VS #016
+GPU memory:  free:3134MB  total:3583MB
+......010 Frame #005 VS #017
+GPU memory:  free:3134MB  total:3583MB
+......011 Frame #005 VS #018
+GPU memory:  free:3134MB  total:3583MB
+......012 Frame #005 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......013 Frame #005 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......014 Frame #005 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......015 Frame #005 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......016 Frame #005 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......017 Frame #005 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......018 Frame #005 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......019 Frame #005 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......020 Frame #005 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......021 Frame #005 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......022 Frame #005 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......023 Frame #005 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......024 Frame #005 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......025 Frame #006 VS #008
+GPU memory:  free:3134MB  total:3583MB
+......026 Frame #006 VS #009
+GPU memory:  free:3134MB  total:3583MB
+......027 Frame #006 VS #010
+GPU memory:  free:3134MB  total:3583MB
+......028 Frame #006 VS #011
+GPU memory:  free:3134MB  total:3583MB
+......029 Frame #006 VS #012
+GPU memory:  free:3134MB  total:3583MB
+......030 Frame #006 VS #013
+GPU memory:  free:3134MB  total:3583MB
+......031 Frame #006 VS #014
+GPU memory:  free:3134MB  total:3583MB
+......032 Frame #006 VS #015
+GPU memory:  free:3134MB  total:3583MB
+......033 Frame #006 VS #016
+GPU memory:  free:3134MB  total:3583MB
+......034 Frame #006 VS #017
+GPU memory:  free:3134MB  total:3583MB
+......035 Frame #006 VS #018
+GPU memory:  free:3134MB  total:3583MB
+......036 Frame #006 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......037 Frame #006 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......038 Frame #006 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......039 Frame #006 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......040 Frame #006 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......041 Frame #006 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......042 Frame #006 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......043 Frame #006 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......044 Frame #006 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......045 Frame #006 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......046 Frame #006 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......047 Frame #006 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......048 Frame #006 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......049 Frame #007 VS #009
+GPU memory:  free:3134MB  total:3583MB
+......050 Frame #007 VS #010
+GPU memory:  free:3134MB  total:3583MB
+......051 Frame #007 VS #011
+GPU memory:  free:3134MB  total:3583MB
+......052 Frame #007 VS #012
+GPU memory:  free:3134MB  total:3583MB
+......053 Frame #007 VS #013
+GPU memory:  free:3134MB  total:3583MB
+......054 Frame #007 VS #014
+GPU memory:  free:3134MB  total:3583MB
+......055 Frame #007 VS #015
+GPU memory:  free:3134MB  total:3583MB
+......056 Frame #007 VS #016
+GPU memory:  free:3134MB  total:3583MB
+......057 Frame #007 VS #017
+GPU memory:  free:3134MB  total:3583MB
+......058 Frame #007 VS #018
+GPU memory:  free:3134MB  total:3583MB
+......059 Frame #007 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......060 Frame #007 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......061 Frame #007 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......062 Frame #007 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......063 Frame #007 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......064 Frame #007 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......065 Frame #007 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......066 Frame #007 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......067 Frame #007 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......068 Frame #007 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......069 Frame #007 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......070 Frame #007 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......071 Frame #007 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......072 Frame #008 VS #010
+GPU memory:  free:3134MB  total:3583MB
+......073 Frame #008 VS #011
+GPU memory:  free:3134MB  total:3583MB
+......074 Frame #008 VS #012
+GPU memory:  free:3134MB  total:3583MB
+......075 Frame #008 VS #013
+GPU memory:  free:3134MB  total:3583MB
+......076 Frame #008 VS #014
+GPU memory:  free:3134MB  total:3583MB
+......077 Frame #008 VS #015
+GPU memory:  free:3134MB  total:3583MB
+......078 Frame #008 VS #016
+GPU memory:  free:3134MB  total:3583MB
+......079 Frame #008 VS #017
+GPU memory:  free:3134MB  total:3583MB
+......080 Frame #008 VS #018
+GPU memory:  free:3134MB  total:3583MB
+......081 Frame #008 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......082 Frame #008 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......083 Frame #008 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......084 Frame #008 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......085 Frame #008 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......086 Frame #008 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......087 Frame #008 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......088 Frame #008 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......089 Frame #008 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......090 Frame #008 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......091 Frame #008 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......092 Frame #008 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......093 Frame #008 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......094 Frame #009 VS #011
+GPU memory:  free:3134MB  total:3583MB
+......095 Frame #009 VS #012
+GPU memory:  free:3134MB  total:3583MB
+......096 Frame #009 VS #013
+GPU memory:  free:3134MB  total:3583MB
+......097 Frame #009 VS #014
+GPU memory:  free:3134MB  total:3583MB
+......098 Frame #009 VS #015
+GPU memory:  free:3134MB  total:3583MB
+......099 Frame #009 VS #016
+GPU memory:  free:3134MB  total:3583MB
+......100 Frame #009 VS #017
+GPU memory:  free:3134MB  total:3583MB
+......101 Frame #009 VS #018
+GPU memory:  free:3134MB  total:3583MB
+......102 Frame #009 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......103 Frame #009 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......104 Frame #009 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......105 Frame #009 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......106 Frame #009 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......107 Frame #009 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......108 Frame #009 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......109 Frame #009 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......110 Frame #009 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......111 Frame #009 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......112 Frame #009 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......113 Frame #009 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......114 Frame #009 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......115 Frame #010 VS #012
+GPU memory:  free:3134MB  total:3583MB
+......116 Frame #010 VS #013
+GPU memory:  free:3134MB  total:3583MB
+......117 Frame #010 VS #014
+GPU memory:  free:3134MB  total:3583MB
+......118 Frame #010 VS #015
+GPU memory:  free:3134MB  total:3583MB
+......119 Frame #010 VS #016
+GPU memory:  free:3134MB  total:3583MB
+......120 Frame #010 VS #017
+GPU memory:  free:3134MB  total:3583MB
+......121 Frame #010 VS #018
+GPU memory:  free:3134MB  total:3583MB
+......122 Frame #010 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......123 Frame #010 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......124 Frame #010 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......125 Frame #010 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......126 Frame #010 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......127 Frame #010 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......128 Frame #010 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......129 Frame #010 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......130 Frame #010 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......131 Frame #010 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......132 Frame #010 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......133 Frame #010 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......134 Frame #010 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......135 Frame #011 VS #013
+GPU memory:  free:3134MB  total:3583MB
+......136 Frame #011 VS #014
+GPU memory:  free:3134MB  total:3583MB
+......137 Frame #011 VS #015
+GPU memory:  free:3134MB  total:3583MB
+......138 Frame #011 VS #016
+GPU memory:  free:3134MB  total:3583MB
+......139 Frame #011 VS #017
+GPU memory:  free:3134MB  total:3583MB
+......140 Frame #011 VS #018
+GPU memory:  free:3134MB  total:3583MB
+......141 Frame #011 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......142 Frame #011 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......143 Frame #011 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......144 Frame #011 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......145 Frame #011 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......146 Frame #011 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......147 Frame #011 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......148 Frame #011 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......149 Frame #011 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......150 Frame #011 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......151 Frame #011 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......152 Frame #011 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......153 Frame #011 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......154 Frame #012 VS #014
+GPU memory:  free:3134MB  total:3583MB
+......155 Frame #012 VS #015
+GPU memory:  free:3134MB  total:3583MB
+......156 Frame #012 VS #016
+GPU memory:  free:3134MB  total:3583MB
+......157 Frame #012 VS #017
+GPU memory:  free:3134MB  total:3583MB
+......158 Frame #012 VS #018
+GPU memory:  free:3134MB  total:3583MB
+......159 Frame #012 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......160 Frame #012 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......161 Frame #012 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......162 Frame #012 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......163 Frame #012 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......164 Frame #012 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......165 Frame #012 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......166 Frame #012 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......167 Frame #012 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......168 Frame #012 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......169 Frame #012 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......170 Frame #012 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......171 Frame #012 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......172 Frame #013 VS #015
+GPU memory:  free:3134MB  total:3583MB
+......173 Frame #013 VS #016
+GPU memory:  free:3134MB  total:3583MB
+......174 Frame #013 VS #017
+GPU memory:  free:3134MB  total:3583MB
+......175 Frame #013 VS #018
+GPU memory:  free:3134MB  total:3583MB
+......176 Frame #013 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......177 Frame #013 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......178 Frame #013 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......179 Frame #013 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......180 Frame #013 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......181 Frame #013 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......182 Frame #013 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......183 Frame #013 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......184 Frame #013 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......185 Frame #013 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......186 Frame #013 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......187 Frame #013 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......188 Frame #013 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......189 Frame #014 VS #016
+GPU memory:  free:3134MB  total:3583MB
+......190 Frame #014 VS #017
+GPU memory:  free:3134MB  total:3583MB
+......191 Frame #014 VS #018
+GPU memory:  free:3134MB  total:3583MB
+......192 Frame #014 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......193 Frame #014 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......194 Frame #014 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......195 Frame #014 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......196 Frame #014 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......197 Frame #014 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......198 Frame #014 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......199 Frame #014 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......200 Frame #014 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......201 Frame #014 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......202 Frame #014 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......203 Frame #014 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......204 Frame #014 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......205 Frame #015 VS #017
+GPU memory:  free:3134MB  total:3583MB
+......206 Frame #015 VS #018
+GPU memory:  free:3134MB  total:3583MB
+......207 Frame #015 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......208 Frame #015 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......209 Frame #015 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......210 Frame #015 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......211 Frame #015 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......212 Frame #015 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......213 Frame #015 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......214 Frame #015 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......215 Frame #015 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......216 Frame #015 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......217 Frame #015 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......218 Frame #015 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......219 Frame #015 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......220 Frame #016 VS #018
+GPU memory:  free:3134MB  total:3583MB
+......221 Frame #016 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......222 Frame #016 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......223 Frame #016 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......224 Frame #016 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......225 Frame #016 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......226 Frame #016 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......227 Frame #016 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......228 Frame #016 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......229 Frame #016 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......230 Frame #016 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......231 Frame #016 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......232 Frame #016 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......233 Frame #016 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......234 Frame #017 VS #019
+GPU memory:  free:3134MB  total:3583MB
+......235 Frame #017 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......236 Frame #017 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......237 Frame #017 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......238 Frame #017 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......239 Frame #017 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......240 Frame #017 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......241 Frame #017 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......242 Frame #017 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......243 Frame #017 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......244 Frame #017 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......245 Frame #017 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......246 Frame #017 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......247 Frame #018 VS #020
+GPU memory:  free:3134MB  total:3583MB
+......248 Frame #018 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......249 Frame #018 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......250 Frame #018 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......251 Frame #018 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......252 Frame #018 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......253 Frame #018 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......254 Frame #018 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......255 Frame #018 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......256 Frame #018 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......257 Frame #018 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......258 Frame #018 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......259 Frame #019 VS #021
+GPU memory:  free:3134MB  total:3583MB
+......260 Frame #019 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......261 Frame #019 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......262 Frame #019 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......263 Frame #019 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......264 Frame #019 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......265 Frame #019 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......266 Frame #019 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......267 Frame #019 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......268 Frame #019 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......269 Frame #019 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......270 Frame #020 VS #022
+GPU memory:  free:3134MB  total:3583MB
+......271 Frame #020 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......272 Frame #020 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......273 Frame #020 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......274 Frame #020 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......275 Frame #020 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......276 Frame #020 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......277 Frame #020 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......278 Frame #020 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......279 Frame #020 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......280 Frame #021 VS #023
+GPU memory:  free:3134MB  total:3583MB
+......281 Frame #021 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......282 Frame #021 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......283 Frame #021 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......284 Frame #021 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......285 Frame #021 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......286 Frame #021 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......287 Frame #021 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......288 Frame #021 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......289 Frame #022 VS #024
+GPU memory:  free:3134MB  total:3583MB
+......290 Frame #022 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......291 Frame #022 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......292 Frame #022 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......293 Frame #022 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......294 Frame #022 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......295 Frame #022 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......296 Frame #022 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......297 Frame #023 VS #025
+GPU memory:  free:3134MB  total:3583MB
+......298 Frame #023 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......299 Frame #023 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......300 Frame #023 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......301 Frame #023 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......302 Frame #023 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......303 Frame #023 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......304 Frame #024 VS #026
+GPU memory:  free:3134MB  total:3583MB
+......305 Frame #024 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......306 Frame #024 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......307 Frame #024 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......308 Frame #024 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......309 Frame #024 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......310 Frame #025 VS #027
+GPU memory:  free:3134MB  total:3583MB
+......311 Frame #025 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......312 Frame #025 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......313 Frame #025 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......314 Frame #025 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......315 Frame #026 VS #028
+GPU memory:  free:3134MB  total:3583MB
+......316 Frame #026 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......317 Frame #026 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......318 Frame #026 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......319 Frame #027 VS #029
+GPU memory:  free:3134MB  total:3583MB
+......320 Frame #027 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......321 Frame #027 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......322 Frame #028 VS #030
+GPU memory:  free:3134MB  total:3583MB
+......323 Frame #028 VS #031
+GPU memory:  free:3134MB  total:3583MB
+......324 Frame #029 VS #031
+GPU memory:  free:3134MB  total:3583MB
+
+Calculate relative drift according to CC maps:
+......000 Frame #005 VS #007 xy-shift:   1.0625   0.9375
+......001 Frame #005 VS #008 xy-shift:   1.0625   1.0625
+......002 Frame #005 VS #009 xy-shift:   1.0625   1.0625
+......003 Frame #005 VS #010 xy-shift:   1.0625   1.0000
+......004 Frame #005 VS #011 xy-shift:   1.0625   1.0625
+......005 Frame #005 VS #012 xy-shift:   1.0625   1.0000
+......006 Frame #005 VS #013 xy-shift:   1.1250   1.0625
+......007 Frame #005 VS #014 xy-shift:   1.0625   1.1875
+......008 Frame #005 VS #015 xy-shift:   1.0625   1.0625
+......009 Frame #005 VS #016 xy-shift:   1.0625   1.0000
+......010 Frame #005 VS #017 xy-shift:   1.0000   2.9375
+......011 Frame #005 VS #018 xy-shift:   1.0625   0.9375
+......012 Frame #005 VS #019 xy-shift:  -1.0000   3.0000
+......013 Frame #005 VS #020 xy-shift:   1.0625   0.9375
+......014 Frame #005 VS #021 xy-shift:  -0.9375   2.8750
+......015 Frame #005 VS #022 xy-shift:  -0.9375   2.9375
+......016 Frame #005 VS #023 xy-shift:  -0.8750   2.8750
+......017 Frame #005 VS #024 xy-shift:  -0.6250   1.2500
+......018 Frame #005 VS #025 xy-shift:  -1.0000   3.0625
+......019 Frame #005 VS #026 xy-shift:  -1.0625  -0.8750
+......020 Frame #005 VS #027 xy-shift:  -1.0000  -1.0625
+......021 Frame #005 VS #028 xy-shift:  -0.8750   2.7500
+......022 Frame #005 VS #029 xy-shift:   0.8125  -3.0000
+......023 Frame #005 VS #030 xy-shift:  -1.0625  -1.0000
+......024 Frame #005 VS #031 xy-shift:  -0.9375  -0.8125
+......025 Frame #006 VS #008 xy-shift:   1.0000   0.8750
+......026 Frame #006 VS #009 xy-shift:   1.0000   0.9375
+......027 Frame #006 VS #010 xy-shift:  -1.0000   2.9375
+......028 Frame #006 VS #011 xy-shift:   1.0000   1.0000
+......029 Frame #006 VS #012 xy-shift:   1.0625   0.9375
+......030 Frame #006 VS #013 xy-shift:  -1.0625   3.0000
+......031 Frame #006 VS #014 xy-shift:   0.9375   0.9375
+......032 Frame #006 VS #015 xy-shift:  -1.0000   2.8750
+......033 Frame #006 VS #016 xy-shift:   1.0000   1.0000
+......034 Frame #006 VS #017 xy-shift:  -1.0625   3.0625
+......035 Frame #006 VS #018 xy-shift:  -1.0625   2.9375
+......036 Frame #006 VS #019 xy-shift:   0.9375   0.7500
+......037 Frame #006 VS #020 xy-shift:   1.0000   0.8125
+......038 Frame #006 VS #021 xy-shift:   0.9375   1.0000
+......039 Frame #006 VS #022 xy-shift:  -0.8125  -0.8750
+......040 Frame #006 VS #023 xy-shift:  -0.7500  -0.9375
+......041 Frame #006 VS #024 xy-shift:  -0.8750  -0.9375
+......042 Frame #006 VS #025 xy-shift:   0.9375  -2.8750
+......043 Frame #006 VS #026 xy-shift:   0.9375  -0.9375
+......044 Frame #006 VS #027 xy-shift:   0.9375   0.8125
+......045 Frame #006 VS #028 xy-shift:  -1.0000  -0.8750
+......046 Frame #006 VS #029 xy-shift:  -0.8750  -0.8750
+......047 Frame #006 VS #030 xy-shift:  -1.0000   2.8750
+......048 Frame #006 VS #031 xy-shift:  -1.0000   3.0625
+......049 Frame #007 VS #009 xy-shift:  -1.0000   2.8750
+......050 Frame #007 VS #010 xy-shift:  -0.9375   2.8750
+......051 Frame #007 VS #011 xy-shift:   0.9375   0.9375
+......052 Frame #007 VS #012 xy-shift:   0.9375   0.9375
+......053 Frame #007 VS #013 xy-shift:   1.0000   0.8750
+......054 Frame #007 VS #014 xy-shift:  -1.0625   2.8750
+......055 Frame #007 VS #015 xy-shift:  -1.0625   2.9375
+......056 Frame #007 VS #016 xy-shift:  -0.9375   2.9375
+......057 Frame #007 VS #017 xy-shift:   0.9375   0.8750
+......058 Frame #007 VS #018 xy-shift:   0.8750   0.6875
+......059 Frame #007 VS #019 xy-shift:  -0.8125   1.1875
+......060 Frame #007 VS #020 xy-shift:  -0.7500   2.7500
+......061 Frame #007 VS #021 xy-shift:  -0.8750  -0.8750
+......062 Frame #007 VS #022 xy-shift:  -0.9375  -0.9375
+......063 Frame #007 VS #023 xy-shift:   0.7500  -0.6875
+......064 Frame #007 VS #024 xy-shift:  -0.9375  -0.8750
+......065 Frame #007 VS #025 xy-shift:  -1.1250  -1.0625
+......066 Frame #007 VS #026 xy-shift:  -1.0000  -1.0000
+......067 Frame #007 VS #027 xy-shift:   0.8125   0.8750
+......068 Frame #007 VS #028 xy-shift:  -1.0000  -1.1250
+......069 Frame #007 VS #029 xy-shift:  -0.9375  -1.1250
+......070 Frame #007 VS #030 xy-shift:  -1.0000  -0.9375
+......071 Frame #007 VS #031 xy-shift:  -1.0000  -1.0625
+......072 Frame #008 VS #010 xy-shift:  -0.8750   2.8750
+......073 Frame #008 VS #011 xy-shift:  -0.9375   2.8750
+......074 Frame #008 VS #012 xy-shift:  -0.9375   2.8750
+......075 Frame #008 VS #013 xy-shift:   0.9375   0.8750
+......076 Frame #008 VS #014 xy-shift:  -0.8750   2.8125
+......077 Frame #008 VS #015 xy-shift:  -0.8750   2.8125
+......078 Frame #008 VS #016 xy-shift:   1.0000   0.8750
+......079 Frame #008 VS #017 xy-shift:  -0.8125   2.8750
+......080 Frame #008 VS #018 xy-shift:  -0.8750  -0.8750
+......081 Frame #008 VS #019 xy-shift:   0.8125  -2.8125
+......082 Frame #008 VS #020 xy-shift:   1.0000  -2.8750
+......083 Frame #008 VS #021 xy-shift:  -0.8125   2.8125
+......084 Frame #008 VS #022 xy-shift:   1.0000  -2.8750
+......085 Frame #008 VS #023 xy-shift:  -1.0000  -0.9375
+......086 Frame #008 VS #024 xy-shift:  -1.0000  -0.9375
+......087 Frame #008 VS #025 xy-shift:  -0.8750  -1.0000
+......088 Frame #008 VS #026 xy-shift:  -1.0000  -1.1250
+......089 Frame #008 VS #027 xy-shift:  -1.0625  -1.1250
+......090 Frame #008 VS #028 xy-shift:  -1.0625  -1.1250
+......091 Frame #008 VS #029 xy-shift:  -1.0000  -0.9375
+......092 Frame #008 VS #030 xy-shift:  -1.0000  -1.0625
+......093 Frame #008 VS #031 xy-shift:  -1.0625  -1.1250
+......094 Frame #009 VS #011 xy-shift:  -0.8125   2.7500
+......095 Frame #009 VS #012 xy-shift:   0.8125   0.8125
+......096 Frame #009 VS #013 xy-shift:  -0.8750   2.7500
+......097 Frame #009 VS #014 xy-shift:  -0.9375   2.8750
+......098 Frame #009 VS #015 xy-shift:  -1.0000   2.8750
+......099 Frame #009 VS #016 xy-shift:  -0.8125  -0.8750
+......100 Frame #009 VS #017 xy-shift:  -0.8750  -0.8750
+......101 Frame #009 VS #018 xy-shift:  -0.8750  -0.8750
+......102 Frame #009 VS #019 xy-shift:   1.0000  -2.8750
+......103 Frame #009 VS #020 xy-shift:  -0.9375  -0.8750
+......104 Frame #009 VS #021 xy-shift:  -0.9375  -0.8750
+......105 Frame #009 VS #022 xy-shift:  -1.0000  -1.0000
+......106 Frame #009 VS #023 xy-shift:  -1.0625  -1.0000
+......107 Frame #009 VS #024 xy-shift:  -0.8750  -1.0000
+......108 Frame #009 VS #025 xy-shift:   1.0000  -2.8750
+......109 Frame #009 VS #026 xy-shift:   0.8750  -1.0000
+......110 Frame #009 VS #027 xy-shift:  -1.0625  -1.0625
+......111 Frame #009 VS #028 xy-shift:  -1.0000  -1.0625
+......112 Frame #009 VS #029 xy-shift:  -1.0625  -1.0625
+......113 Frame #009 VS #030 xy-shift:  -0.9375  -1.1875
+......114 Frame #009 VS #031 xy-shift:  -1.0625  -1.0000
+......115 Frame #010 VS #012 xy-shift:   0.8125   0.7500
+......116 Frame #010 VS #013 xy-shift:   0.8750   0.8125
+......117 Frame #010 VS #014 xy-shift:  -0.7500   1.1875
+......118 Frame #010 VS #015 xy-shift:  -0.8750   2.8125
+......119 Frame #010 VS #016 xy-shift:   0.8125  -2.8125
+......120 Frame #010 VS #017 xy-shift:  -0.8125   0.6875
+......121 Frame #010 VS #018 xy-shift:  -0.8750  -0.8750
+......122 Frame #010 VS #019 xy-shift:  -1.0000  -0.9375
+......123 Frame #010 VS #020 xy-shift:  -0.9375  -0.9375
+......124 Frame #010 VS #021 xy-shift:  -0.9375  -0.8750
+......125 Frame #010 VS #022 xy-shift:  -1.0625  -0.9375
+......126 Frame #010 VS #023 xy-shift:  -1.0625  -1.0625
+......127 Frame #010 VS #024 xy-shift:  -0.8750  -1.0000
+......128 Frame #010 VS #025 xy-shift:   0.9375  -3.0000
+......129 Frame #010 VS #026 xy-shift:  -0.9375  -1.0000
+......130 Frame #010 VS #027 xy-shift:  -0.8750  -1.3125
+......131 Frame #010 VS #028 xy-shift:  -0.9375  -1.2500
+......132 Frame #010 VS #029 xy-shift:  -1.0000  -1.1875
+......133 Frame #010 VS #030 xy-shift:  -1.0625  -1.0625
+......134 Frame #010 VS #031 xy-shift:  -1.0000  -1.0000
+......135 Frame #011 VS #013 xy-shift:   0.8750   0.8750
+......136 Frame #011 VS #014 xy-shift:  -0.8125  -0.7500
+......137 Frame #011 VS #015 xy-shift:   0.9375   0.8125
+......138 Frame #011 VS #016 xy-shift:   0.8750   0.8125
+......139 Frame #011 VS #017 xy-shift:  -0.9375   2.8750
+......140 Frame #011 VS #018 xy-shift:  -0.8750  -0.8750
+......141 Frame #011 VS #019 xy-shift:  -0.9375  -0.8750
+......142 Frame #011 VS #020 xy-shift:  -0.9375  -0.9375
+......143 Frame #011 VS #021 xy-shift:   0.8750  -2.8750
+......144 Frame #011 VS #022 xy-shift:   0.9375  -2.9375
+......145 Frame #011 VS #023 xy-shift:   0.8750  -3.0625
+......146 Frame #011 VS #024 xy-shift:  -0.8750   2.8750
+......147 Frame #011 VS #025 xy-shift:   1.0000  -3.0000
+......148 Frame #011 VS #026 xy-shift:   0.9375  -3.1250
+......149 Frame #011 VS #027 xy-shift:   1.0000  -2.9375
+......150 Frame #011 VS #028 xy-shift:  -1.0000  -1.1875
+......151 Frame #011 VS #029 xy-shift:  -1.0000  -1.2500
+......152 Frame #011 VS #030 xy-shift:  -1.0000  -1.1250
+......153 Frame #011 VS #031 xy-shift:  -1.0625  -1.1250
+......154 Frame #012 VS #014 xy-shift:  -0.8750   2.8750
+......155 Frame #012 VS #015 xy-shift:   0.8125   0.8125
+......156 Frame #012 VS #016 xy-shift:   0.8125   0.8125
+......157 Frame #012 VS #017 xy-shift:   0.8125  -2.8125
+......158 Frame #012 VS #018 xy-shift:  -0.8750  -0.8750
+......159 Frame #012 VS #019 xy-shift:  -0.9375  -0.9375
+......160 Frame #012 VS #020 xy-shift:  -0.9375  -0.9375
+......161 Frame #012 VS #021 xy-shift:  -0.9375  -0.9375
+......162 Frame #012 VS #022 xy-shift:   0.9375  -2.8750
+......163 Frame #012 VS #023 xy-shift:  -1.0000  -1.0000
+......164 Frame #012 VS #024 xy-shift:  -1.0625  -1.0625
+......165 Frame #012 VS #025 xy-shift:   1.0000  -3.0000
+......166 Frame #012 VS #026 xy-shift:  -1.0625  -1.1875
+......167 Frame #012 VS #027 xy-shift:  -0.9375  -1.0625
+......168 Frame #012 VS #028 xy-shift:  -1.0625  -1.1875
+......169 Frame #012 VS #029 xy-shift:  -1.0625  -1.1250
+......170 Frame #012 VS #030 xy-shift:  -1.0625  -1.1250
+......171 Frame #012 VS #031 xy-shift:  -1.0625  -1.1875
+......172 Frame #013 VS #015 xy-shift:  -0.8125   2.8125
+......173 Frame #013 VS #016 xy-shift:  -0.8750   2.8750
+......174 Frame #013 VS #017 xy-shift:  -0.8750  -0.8125
+......175 Frame #013 VS #018 xy-shift:  -0.8750  -0.8750
+......176 Frame #013 VS #019 xy-shift:  -0.9375  -0.8750
+......177 Frame #013 VS #020 xy-shift:  -0.9375  -0.9375
+......178 Frame #013 VS #021 xy-shift:  -0.9375  -0.9375
+......179 Frame #013 VS #022 xy-shift:  -1.0000  -1.0625
+......180 Frame #013 VS #023 xy-shift:  -1.0625  -1.0625
+......181 Frame #013 VS #024 xy-shift:  -1.0625  -1.1875
+......182 Frame #013 VS #025 xy-shift:   1.0000  -2.9375
+......183 Frame #013 VS #026 xy-shift:  -1.0000  -1.0000
+......184 Frame #013 VS #027 xy-shift:  -1.0000  -1.1250
+......185 Frame #013 VS #028 xy-shift:  -1.0625  -1.1250
+......186 Frame #013 VS #029 xy-shift:  -1.0625  -1.0625
+......187 Frame #013 VS #030 xy-shift:  -1.0625  -1.2500
+......188 Frame #013 VS #031 xy-shift:  -1.0000  -1.1250
+......189 Frame #014 VS #016 xy-shift:  -0.8125  -0.8125
+......190 Frame #014 VS #017 xy-shift:  -0.8125  -2.7500
+......191 Frame #014 VS #018 xy-shift:   0.9375  -2.8750
+......192 Frame #014 VS #019 xy-shift:  -0.9375  -0.8750
+......193 Frame #014 VS #020 xy-shift:   0.9375  -2.9375
+......194 Frame #014 VS #021 xy-shift:  -0.9375  -0.9375
+......195 Frame #014 VS #022 xy-shift:  -1.0000  -1.0000
+......196 Frame #014 VS #023 xy-shift:  -1.0000  -1.0625
+......197 Frame #014 VS #024 xy-shift:  -1.0625  -1.0625
+......198 Frame #014 VS #025 xy-shift:  -1.0625  -1.0000
+......199 Frame #014 VS #026 xy-shift:  -1.0625  -1.0625
+......200 Frame #014 VS #027 xy-shift:   0.9375  -3.0000
+......201 Frame #014 VS #028 xy-shift:  -1.0000  -1.0625
+......202 Frame #014 VS #029 xy-shift:  -1.0625  -1.1875
+......203 Frame #014 VS #030 xy-shift:  -1.0625  -1.1250
+......204 Frame #014 VS #031 xy-shift:  -1.0625  -1.0625
+......205 Frame #015 VS #017 xy-shift:   0.8125  -0.7500
+......206 Frame #015 VS #018 xy-shift:  -0.8750  -0.8125
+......207 Frame #015 VS #019 xy-shift:  -0.9375  -0.9375
+......208 Frame #015 VS #020 xy-shift:  -1.0000  -1.0000
+......209 Frame #015 VS #021 xy-shift:  -0.9375  -1.0000
+......210 Frame #015 VS #022 xy-shift:   0.9375  -2.8750
+......211 Frame #015 VS #023 xy-shift:  -1.0000  -1.0625
+......212 Frame #015 VS #024 xy-shift:  -0.9375  -1.0625
+......213 Frame #015 VS #025 xy-shift:  -1.0000  -1.0000
+......214 Frame #015 VS #026 xy-shift:  -0.9375  -1.1250
+......215 Frame #015 VS #027 xy-shift:  -1.0000  -1.0625
+......216 Frame #015 VS #028 xy-shift:  -1.0625  -1.1875
+......217 Frame #015 VS #029 xy-shift:  -1.0000  -1.1250
+......218 Frame #015 VS #030 xy-shift:  -1.0000  -1.0625
+......219 Frame #015 VS #031 xy-shift:  -1.0000  -1.0625
+......220 Frame #016 VS #018 xy-shift:  -0.8750  -0.8125
+......221 Frame #016 VS #019 xy-shift:   0.8750  -2.8125
+......222 Frame #016 VS #020 xy-shift:  -0.9375  -1.0000
+......223 Frame #016 VS #021 xy-shift:  -0.9375  -0.9375
+......224 Frame #016 VS #022 xy-shift:  -1.0000  -0.9375
+......225 Frame #016 VS #023 xy-shift:  -1.0000  -1.0000
+......226 Frame #016 VS #024 xy-shift:  -1.0000  -1.0625
+......227 Frame #016 VS #025 xy-shift:  -0.9375  -1.0625
+......228 Frame #016 VS #026 xy-shift:  -1.0000  -1.1250
+......229 Frame #016 VS #027 xy-shift:  -1.0000  -1.0000
+......230 Frame #016 VS #028 xy-shift:  -1.0000  -1.0625
+......231 Frame #016 VS #029 xy-shift:  -1.0625  -1.1250
+......232 Frame #016 VS #030 xy-shift:  -1.0000  -1.1250
+......233 Frame #016 VS #031 xy-shift:  -1.1250  -1.1250
+......234 Frame #017 VS #019 xy-shift:  -0.8125  -0.8125
+......235 Frame #017 VS #020 xy-shift:   1.0000  -2.8125
+......236 Frame #017 VS #021 xy-shift:  -1.0000  -0.9375
+......237 Frame #017 VS #022 xy-shift:  -0.9375  -0.9375
+......238 Frame #017 VS #023 xy-shift:  -0.8125  -1.0000
+......239 Frame #017 VS #024 xy-shift:  -1.0000  -1.0000
+......240 Frame #017 VS #025 xy-shift:  -1.0625  -1.0625
+......241 Frame #017 VS #026 xy-shift:  -1.0000  -1.1250
+......242 Frame #017 VS #027 xy-shift:  -1.0625  -1.0625
+......243 Frame #017 VS #028 xy-shift:  -1.0000  -1.1250
+......244 Frame #017 VS #029 xy-shift:  -1.0000  -1.1875
+......245 Frame #017 VS #030 xy-shift:  -1.0625  -1.2500
+......246 Frame #017 VS #031 xy-shift:  -1.0625  -1.2500
+......247 Frame #018 VS #020 xy-shift:   0.9375  -2.8125
+......248 Frame #018 VS #021 xy-shift:  -0.9375  -0.8750
+......249 Frame #018 VS #022 xy-shift:   1.0000  -2.8750
+......250 Frame #018 VS #023 xy-shift:  -1.0000  -0.9375
+......251 Frame #018 VS #024 xy-shift:  -0.9375  -1.0000
+......252 Frame #018 VS #025 xy-shift:  -1.0000  -0.9375
+......253 Frame #018 VS #026 xy-shift:  -1.0000  -1.0625
+......254 Frame #018 VS #027 xy-shift:  -1.0000  -1.0000
+......255 Frame #018 VS #028 xy-shift:  -0.9375  -1.1250
+......256 Frame #018 VS #029 xy-shift:  -1.0000  -1.0000
+......257 Frame #018 VS #030 xy-shift:  -1.0625  -1.1250
+......258 Frame #018 VS #031 xy-shift:  -1.0625  -1.0625
+......259 Frame #019 VS #021 xy-shift:  -0.8125  -0.8125
+......260 Frame #019 VS #022 xy-shift:  -0.9375  -0.8750
+......261 Frame #019 VS #023 xy-shift:  -0.9375  -0.9375
+......262 Frame #019 VS #024 xy-shift:  -0.9375  -1.0000
+......263 Frame #019 VS #025 xy-shift:   0.8750  -2.9375
+......264 Frame #019 VS #026 xy-shift:  -1.0000  -1.0625
+......265 Frame #019 VS #027 xy-shift:  -1.0000  -0.9375
+......266 Frame #019 VS #028 xy-shift:  -1.0000  -1.0625
+......267 Frame #019 VS #029 xy-shift:  -1.0000  -1.0000
+......268 Frame #019 VS #030 xy-shift:  -1.0000  -1.0000
+......269 Frame #019 VS #031 xy-shift:  -1.0000  -1.1250
+......270 Frame #020 VS #022 xy-shift:  -0.8750  -0.8750
+......271 Frame #020 VS #023 xy-shift:  -0.9375  -0.9375
+......272 Frame #020 VS #024 xy-shift:  -0.9375  -0.8750
+......273 Frame #020 VS #025 xy-shift:  -0.9375  -0.9375
+......274 Frame #020 VS #026 xy-shift:  -0.9375  -1.0000
+......275 Frame #020 VS #027 xy-shift:  -1.0625  -0.9375
+......276 Frame #020 VS #028 xy-shift:  -1.0000  -1.0625
+......277 Frame #020 VS #029 xy-shift:  -1.0000  -1.0000
+......278 Frame #020 VS #030 xy-shift:  -0.9375  -1.0000
+......279 Frame #020 VS #031 xy-shift:  -1.0000  -1.1250
+......280 Frame #021 VS #023 xy-shift:  -0.8750  -0.8750
+......281 Frame #021 VS #024 xy-shift:  -0.9375  -0.9375
+......282 Frame #021 VS #025 xy-shift:  -0.9375  -0.9375
+......283 Frame #021 VS #026 xy-shift:  -0.9375  -0.9375
+......284 Frame #021 VS #027 xy-shift:  -0.9375  -0.9375
+......285 Frame #021 VS #028 xy-shift:  -0.9375  -1.0000
+......286 Frame #021 VS #029 xy-shift:  -0.8750  -0.9375
+......287 Frame #021 VS #030 xy-shift:  -1.0000  -1.0625
+......288 Frame #021 VS #031 xy-shift:  -0.9375  -1.0000
+......289 Frame #022 VS #024 xy-shift:  -0.8750  -0.8750
+......290 Frame #022 VS #025 xy-shift:   0.8750  -2.7500
+......291 Frame #022 VS #026 xy-shift:  -0.8750  -0.8750
+......292 Frame #022 VS #027 xy-shift:  -0.9375  -0.9375
+......293 Frame #022 VS #028 xy-shift:  -0.9375  -1.0000
+......294 Frame #022 VS #029 xy-shift:  -0.8750  -0.8750
+......295 Frame #022 VS #030 xy-shift:  -0.8750  -0.8750
+......296 Frame #022 VS #031 xy-shift:  -1.0000  -1.0000
+......297 Frame #023 VS #025 xy-shift:   0.8750  -2.8125
+......298 Frame #023 VS #026 xy-shift:  -0.8750  -0.8750
+......299 Frame #023 VS #027 xy-shift:  -0.9375  -0.9375
+......300 Frame #023 VS #028 xy-shift:  -0.8125   2.8750
+......301 Frame #023 VS #029 xy-shift:  -0.9375  -0.9375
+......302 Frame #023 VS #030 xy-shift:  -0.9375  -1.0625
+......303 Frame #023 VS #031 xy-shift:  -0.9375   3.0000
+......304 Frame #024 VS #026 xy-shift:  -0.8750  -0.9375
+......305 Frame #024 VS #027 xy-shift:  -0.8750  -0.9375
+......306 Frame #024 VS #028 xy-shift:  -0.9375  -0.8750
+......307 Frame #024 VS #029 xy-shift:  -0.9375   2.9375
+......308 Frame #024 VS #030 xy-shift:  -0.8750  -0.9375
+......309 Frame #024 VS #031 xy-shift:  -0.9375  -0.8750
+......310 Frame #025 VS #027 xy-shift:  -0.8750  -0.8750
+......311 Frame #025 VS #028 xy-shift:  -0.8750  -0.8750
+......312 Frame #025 VS #029 xy-shift:  -0.8750  -0.8750
+......313 Frame #025 VS #030 xy-shift:  -0.8125   2.9375
+......314 Frame #025 VS #031 xy-shift:  -0.9375  -1.0000
+......315 Frame #026 VS #028 xy-shift:  -0.7500  -0.8125
+......316 Frame #026 VS #029 xy-shift:  -0.8750  -0.8750
+......317 Frame #026 VS #030 xy-shift:  -0.8125  -0.9375
+......318 Frame #026 VS #031 xy-shift:  -0.9375   2.9375
+......319 Frame #027 VS #029 xy-shift:  -0.8750   2.9375
+......320 Frame #027 VS #030 xy-shift:  -0.8750  -0.8750
+......321 Frame #027 VS #031 xy-shift:  -0.9375   2.9375
+......322 Frame #028 VS #030 xy-shift:  -0.8750  -0.8750
+......323 Frame #028 VS #031 xy-shift:  -0.9375   3.0000
+......324 Frame #029 VS #031 xy-shift:  -0.8750   2.8750
+
+Calculate adjacent drift:
+
+Round 0 with 0 exception(s)
+Residue of over-determinated equation:
+......000 Frame #005 VS #007 res:   0.6516
+......001 Frame #005 VS #008 res:   0.4063
+......002 Frame #005 VS #009 res:   0.5707
+......003 Frame #005 VS #010 res:   1.0148
+......004 Frame #005 VS #011 res:   1.2596
+......005 Frame #005 VS #012 res:   1.0106
+......006 Frame #005 VS #013 res:   0.7943
+......007 Frame #005 VS #014 res:   1.4210
+......008 Frame #005 VS #015 res:   1.4728
+......009 Frame #005 VS #016 res:   0.8851
+......010 Frame #005 VS #017 res:   1.2515
+......011 Frame #005 VS #018 res:   0.9296
+......012 Frame #005 VS #019 res:   2.2873
+......013 Frame #005 VS #020 res:   0.5781
+......014 Frame #005 VS #021 res:   2.0128
+......015 Frame #005 VS #022 res:   2.6211
+......016 Frame #005 VS #023 res:   2.4930
+......017 Frame #005 VS #024 res:   0.6630
+......018 Frame #005 VS #025 res:   3.5127
+......019 Frame #005 VS #026 res:   1.3481
+......020 Frame #005 VS #027 res:   1.3391
+......021 Frame #005 VS #028 res:   2.3885
+......022 Frame #005 VS #029 res:   3.5171
+......023 Frame #005 VS #030 res:   1.4075
+......024 Frame #005 VS #031 res:   1.7750
+......025 Frame #006 VS #008 res:   0.4970
+......026 Frame #006 VS #009 res:   0.5768
+......027 Frame #006 VS #010 res:   1.8923
+......028 Frame #006 VS #011 res:   1.2124
+......029 Frame #006 VS #012 res:   0.9565
+......030 Frame #006 VS #013 res:   2.2498
+......031 Frame #006 VS #014 res:   1.4609
+......032 Frame #006 VS #015 res:   1.4794
+......033 Frame #006 VS #016 res:   0.7397
+......034 Frame #006 VS #017 res:   2.0205
+......035 Frame #006 VS #018 res:   2.1058
+......036 Frame #006 VS #019 res:   0.7914
+......037 Frame #006 VS #020 res:   0.6813
+......038 Frame #006 VS #021 res:   1.0074
+......039 Frame #006 VS #022 res:   1.4804
+......040 Frame #006 VS #023 res:   1.2946
+......041 Frame #006 VS #024 res:   1.4701
+......042 Frame #006 VS #025 res:   2.5809
+......043 Frame #006 VS #026 res:   1.6150
+......044 Frame #006 VS #027 res:   1.6405
+......045 Frame #006 VS #028 res:   1.0765
+......046 Frame #006 VS #029 res:   0.9122
+......047 Frame #006 VS #030 res:   2.7355
+......048 Frame #006 VS #031 res:   2.3281
+......049 Frame #007 VS #009 res:   2.2286
+......050 Frame #007 VS #010 res:   1.7925
+......051 Frame #007 VS #011 res:   1.3732
+......052 Frame #007 VS #012 res:   0.9719
+......053 Frame #007 VS #013 res:   0.8204
+......054 Frame #007 VS #014 res:   1.3220
+......055 Frame #007 VS #015 res:   1.4374
+......056 Frame #007 VS #016 res:   1.9845
+......057 Frame #007 VS #017 res:   1.0987
+......058 Frame #007 VS #018 res:   1.1837
+......059 Frame #007 VS #019 res:   0.8222
+......060 Frame #007 VS #020 res:   2.5206
+......061 Frame #007 VS #021 res:   1.5376
+......062 Frame #007 VS #022 res:   1.1190
+......063 Frame #007 VS #023 res:   1.5865
+......064 Frame #007 VS #024 res:   1.0310
+......065 Frame #007 VS #025 res:   0.9507
+......066 Frame #007 VS #026 res:   0.6955
+......067 Frame #007 VS #027 res:   2.0966
+......068 Frame #007 VS #028 res:   0.9831
+......069 Frame #007 VS #029 res:   0.8512
+......070 Frame #007 VS #030 res:   0.8097
+......071 Frame #007 VS #031 res:   1.5182
+......072 Frame #008 VS #010 res:   2.1241
+......073 Frame #008 VS #011 res:   1.9172
+......074 Frame #008 VS #012 res:   2.1422
+......075 Frame #008 VS #013 res:   0.7688
+......076 Frame #008 VS #014 res:   1.4807
+......077 Frame #008 VS #015 res:   1.5405
+......078 Frame #008 VS #016 res:   0.9592
+......079 Frame #008 VS #017 res:   2.1412
+......080 Frame #008 VS #018 res:   1.3830
+......081 Frame #008 VS #019 res:   3.1789
+......082 Frame #008 VS #020 res:   2.9900
+......083 Frame #008 VS #021 res:   2.6639
+......084 Frame #008 VS #022 res:   2.8745
+......085 Frame #008 VS #023 res:   0.4870
+......086 Frame #008 VS #024 res:   0.6405
+......087 Frame #008 VS #025 res:   0.5557
+......088 Frame #008 VS #026 res:   0.3523
+......089 Frame #008 VS #027 res:   0.2520
+......090 Frame #008 VS #028 res:   0.5524
+......091 Frame #008 VS #029 res:   0.2964
+......092 Frame #008 VS #030 res:   0.5758
+......093 Frame #008 VS #031 res:   1.1560
+......094 Frame #009 VS #011 res:   2.2527
+......095 Frame #009 VS #012 res:   0.9368
+......096 Frame #009 VS #013 res:   2.6387
+......097 Frame #009 VS #014 res:   2.0215
+......098 Frame #009 VS #015 res:   2.1000
+......099 Frame #009 VS #016 res:   1.4761
+......100 Frame #009 VS #017 res:   1.3777
+......101 Frame #009 VS #018 res:   0.9286
+......102 Frame #009 VS #019 res:   2.8664
+......103 Frame #009 VS #020 res:   0.7985
+......104 Frame #009 VS #021 res:   0.6405
+......105 Frame #009 VS #022 res:   0.5103
+......106 Frame #009 VS #023 res:   0.2478
+......107 Frame #009 VS #024 res:   0.2192
+......108 Frame #009 VS #025 res:   1.8113
+......109 Frame #009 VS #026 res:   1.8112
+......110 Frame #009 VS #027 res:   0.4479
+......111 Frame #009 VS #028 res:   0.2416
+......112 Frame #009 VS #029 res:   0.2419
+......113 Frame #009 VS #030 res:   0.4425
+......114 Frame #009 VS #031 res:   0.6022
+......115 Frame #010 VS #012 res:   1.0092
+......116 Frame #010 VS #013 res:   1.0490
+......117 Frame #010 VS #014 res:   0.8649
+......118 Frame #010 VS #015 res:   2.4097
+......119 Frame #010 VS #016 res:   2.8295
+......120 Frame #010 VS #017 res:   1.0565
+......121 Frame #010 VS #018 res:   0.7291
+......122 Frame #010 VS #019 res:   0.8003
+......123 Frame #010 VS #020 res:   0.8957
+......124 Frame #010 VS #021 res:   0.5063
+......125 Frame #010 VS #022 res:   0.7907
+......126 Frame #010 VS #023 res:   0.4945
+......127 Frame #010 VS #024 res:   0.1935
+......128 Frame #010 VS #025 res:   1.4890
+......129 Frame #010 VS #026 res:   0.6894
+......130 Frame #010 VS #027 res:   0.5618
+......131 Frame #010 VS #028 res:   0.2885
+......132 Frame #010 VS #029 res:   0.4502
+......133 Frame #010 VS #030 res:   0.4772
+......134 Frame #010 VS #031 res:   0.3080
+......135 Frame #011 VS #013 res:   1.1106
+......136 Frame #011 VS #014 res:   1.5413
+......137 Frame #011 VS #015 res:   0.8165
+......138 Frame #011 VS #016 res:   1.0822
+......139 Frame #011 VS #017 res:   3.2929
+......140 Frame #011 VS #018 res:   0.9490
+......141 Frame #011 VS #019 res:   1.0214
+......142 Frame #011 VS #020 res:   1.2193
+......143 Frame #011 VS #021 res:   2.2535
+......144 Frame #011 VS #022 res:   1.7944
+......145 Frame #011 VS #023 res:   1.9882
+......146 Frame #011 VS #024 res:   4.2141
+......147 Frame #011 VS #025 res:   1.2123
+......148 Frame #011 VS #026 res:   1.9274
+......149 Frame #011 VS #027 res:   1.7097
+......150 Frame #011 VS #028 res:   0.4818
+......151 Frame #011 VS #029 res:   0.5590
+......152 Frame #011 VS #030 res:   0.5237
+......153 Frame #011 VS #031 res:   0.1051
+......154 Frame #012 VS #014 res:   2.4309
+......155 Frame #012 VS #015 res:   1.0294
+......156 Frame #012 VS #016 res:   1.1708
+......157 Frame #012 VS #017 res:   2.8751
+......158 Frame #012 VS #018 res:   0.6292
+......159 Frame #012 VS #019 res:   0.6407
+......160 Frame #012 VS #020 res:   0.8105
+......161 Frame #012 VS #021 res:   0.4268
+......162 Frame #012 VS #022 res:   2.0649
+......163 Frame #012 VS #023 res:   0.4786
+......164 Frame #012 VS #024 res:   0.2266
+......165 Frame #012 VS #025 res:   1.5855
+......166 Frame #012 VS #026 res:   0.5620
+......167 Frame #012 VS #027 res:   0.8458
+......168 Frame #012 VS #028 res:   0.3673
+......169 Frame #012 VS #029 res:   0.5608
+......170 Frame #012 VS #030 res:   0.5024
+......171 Frame #012 VS #031 res:   0.3971
+......172 Frame #013 VS #015 res:   2.2512
+......173 Frame #013 VS #016 res:   2.9623
+......174 Frame #013 VS #017 res:   0.9604
+......175 Frame #013 VS #018 res:   0.5654
+......176 Frame #013 VS #019 res:   0.4587
+......177 Frame #013 VS #020 res:   0.5928
+......178 Frame #013 VS #021 res:   0.3310
+......179 Frame #013 VS #022 res:   0.3815
+......180 Frame #013 VS #023 res:   0.2616
+......181 Frame #013 VS #024 res:   0.0875
+......182 Frame #013 VS #025 res:   1.7863
+......183 Frame #013 VS #026 res:   0.6111
+......184 Frame #013 VS #027 res:   0.6673
+......185 Frame #013 VS #028 res:   0.4517
+......186 Frame #013 VS #029 res:   0.5999
+......187 Frame #013 VS #030 res:   0.5132
+......188 Frame #013 VS #031 res:   0.6566
+......189 Frame #014 VS #016 res:   1.1365
+......190 Frame #014 VS #017 res:   2.2893
+......191 Frame #014 VS #018 res:   2.1295
+......192 Frame #014 VS #019 res:   0.9597
+......193 Frame #014 VS #020 res:   1.5923
+......194 Frame #014 VS #021 res:   0.7223
+......195 Frame #014 VS #022 res:   1.1734
+......196 Frame #014 VS #023 res:   1.0003
+......197 Frame #014 VS #024 res:   0.7964
+......198 Frame #014 VS #025 res:   1.9092
+......199 Frame #014 VS #026 res:   1.2573
+......200 Frame #014 VS #027 res:   1.6350
+......201 Frame #014 VS #028 res:   0.9998
+......202 Frame #014 VS #029 res:   1.0221
+......203 Frame #014 VS #030 res:   0.9576
+......204 Frame #014 VS #031 res:   0.4371
+......205 Frame #015 VS #017 res:   0.8182
+......206 Frame #015 VS #018 res:   0.7009
+......207 Frame #015 VS #019 res:   0.8604
+......208 Frame #015 VS #020 res:   1.1687
+......209 Frame #015 VS #021 res:   0.6203
+......210 Frame #015 VS #022 res:   1.6008
+......211 Frame #015 VS #023 res:   0.9397
+......212 Frame #015 VS #024 res:   0.6898
+......213 Frame #015 VS #025 res:   1.8154
+......214 Frame #015 VS #026 res:   1.1101
+......215 Frame #015 VS #027 res:   1.3760
+......216 Frame #015 VS #028 res:   0.8381
+......217 Frame #015 VS #029 res:   1.0422
+......218 Frame #015 VS #030 res:   0.9960
+......219 Frame #015 VS #031 res:   0.4476
+......220 Frame #016 VS #018 res:   0.5921
+......221 Frame #016 VS #019 res:   2.4784
+......222 Frame #016 VS #020 res:   0.7228
+......223 Frame #016 VS #021 res:   0.4112
+......224 Frame #016 VS #022 res:   0.5602
+......225 Frame #016 VS #023 res:   0.3519
+......226 Frame #016 VS #024 res:   0.0667
+......227 Frame #016 VS #025 res:   1.0896
+......228 Frame #016 VS #026 res:   0.4918
+......229 Frame #016 VS #027 res:   0.8052
+......230 Frame #016 VS #028 res:   0.4583
+......231 Frame #016 VS #029 res:   0.4899
+......232 Frame #016 VS #030 res:   0.5229
+......233 Frame #016 VS #031 res:   0.4346
+......234 Frame #017 VS #019 res:   0.6695
+......235 Frame #017 VS #020 res:   2.1037
+......236 Frame #017 VS #021 res:   0.6721
+......237 Frame #017 VS #022 res:   0.7119
+......238 Frame #017 VS #023 res:   0.3723
+......239 Frame #017 VS #024 res:   0.2781
+......240 Frame #017 VS #025 res:   1.3073
+......241 Frame #017 VS #026 res:   0.5637
+......242 Frame #017 VS #027 res:   0.8323
+......243 Frame #017 VS #028 res:   0.3010
+......244 Frame #017 VS #029 res:   0.3794
+......245 Frame #017 VS #030 res:   0.2224
+......246 Frame #017 VS #031 res:   0.4315
+......247 Frame #018 VS #020 res:   2.3696
+......248 Frame #018 VS #021 res:   0.9729
+......249 Frame #018 VS #022 res:   2.3042
+......250 Frame #018 VS #023 res:   0.5960
+......251 Frame #018 VS #024 res:   0.4809
+......252 Frame #018 VS #025 res:   1.2478
+......253 Frame #018 VS #026 res:   0.5180
+......254 Frame #018 VS #027 res:   0.6705
+......255 Frame #018 VS #028 res:   0.1477
+......256 Frame #018 VS #029 res:   0.2473
+......257 Frame #018 VS #030 res:   0.1269
+......258 Frame #018 VS #031 res:   0.6111
+......259 Frame #019 VS #021 res:   1.0115
+......260 Frame #019 VS #022 res:   0.8590
+......261 Frame #019 VS #023 res:   0.5693
+......262 Frame #019 VS #024 res:   0.6534
+......263 Frame #019 VS #025 res:   1.8364
+......264 Frame #019 VS #026 res:   0.4647
+......265 Frame #019 VS #027 res:   0.5212
+......266 Frame #019 VS #028 res:   0.3400
+......267 Frame #019 VS #029 res:   0.1731
+......268 Frame #019 VS #030 res:   0.2357
+......269 Frame #019 VS #031 res:   0.9556
+......270 Frame #020 VS #022 res:   0.8071
+......271 Frame #020 VS #023 res:   0.6483
+......272 Frame #020 VS #024 res:   0.7201
+......273 Frame #020 VS #025 res:   0.7725
+......274 Frame #020 VS #026 res:   0.3966
+......275 Frame #020 VS #027 res:   0.3845
+......276 Frame #020 VS #028 res:   0.5911
+......277 Frame #020 VS #029 res:   0.3865
+......278 Frame #020 VS #030 res:   0.5668
+......279 Frame #020 VS #031 res:   1.2485
+......280 Frame #021 VS #023 res:   0.6870
+......281 Frame #021 VS #024 res:   0.7467
+......282 Frame #021 VS #025 res:   1.2376
+......283 Frame #021 VS #026 res:   0.6119
+......284 Frame #021 VS #027 res:   0.6839
+......285 Frame #021 VS #028 res:   0.3751
+......286 Frame #021 VS #029 res:   0.2379
+......287 Frame #021 VS #030 res:   0.3558
+......288 Frame #021 VS #031 res:   0.8197
+......289 Frame #022 VS #024 res:   1.0777
+......290 Frame #022 VS #025 res:   2.1226
+......291 Frame #022 VS #026 res:   0.6835
+......292 Frame #022 VS #027 res:   0.6835
+......293 Frame #022 VS #028 res:   0.8407
+......294 Frame #022 VS #029 res:   0.5689
+......295 Frame #022 VS #030 res:   0.6725
+......296 Frame #022 VS #031 res:   1.3917
+......297 Frame #023 VS #025 res:   2.1670
+......298 Frame #023 VS #026 res:   0.9685
+......299 Frame #023 VS #027 res:   0.9942
+......300 Frame #023 VS #028 res:   3.0103
+......301 Frame #023 VS #029 res:   0.8625
+......302 Frame #023 VS #030 res:   1.0060
+......303 Frame #023 VS #031 res:   2.5581
+......304 Frame #024 VS #026 res:   1.0201
+......305 Frame #024 VS #027 res:   0.9957
+......306 Frame #024 VS #028 res:   0.8691
+......307 Frame #024 VS #029 res:   3.4447
+......308 Frame #024 VS #030 res:   0.7662
+......309 Frame #024 VS #031 res:   1.2358
+......310 Frame #025 VS #027 res:   1.1376
+......311 Frame #025 VS #028 res:   1.4502
+......312 Frame #025 VS #029 res:   1.3079
+......313 Frame #025 VS #030 res:   2.3917
+......314 Frame #025 VS #031 res:   2.1521
+......315 Frame #026 VS #028 res:   1.0844
+......316 Frame #026 VS #029 res:   1.0756
+......317 Frame #026 VS #030 res:   1.1574
+......318 Frame #026 VS #031 res:   2.2202
+......319 Frame #027 VS #029 res:   2.7578
+......320 Frame #027 VS #030 res:   1.2801
+......321 Frame #027 VS #031 res:   2.0296
+......322 Frame #028 VS #030 res:   1.1306
+......323 Frame #028 VS #031 res:   2.5396
+......324 Frame #029 VS #031 res:   2.2627
+
+Round 1 with 150 exception(s)
+Residue of over-determinated equation:
+......000 Frame #005 VS #007 res:   0.2630
+......001 Frame #005 VS #008 res:   0.2197
+......002 Frame #005 VS #009 res:   0.2414
+......006 Frame #005 VS #013 res:   0.4762
+......009 Frame #005 VS #016 res:   0.4035
+......011 Frame #005 VS #018 res:   0.3470
+......013 Frame #005 VS #020 res:   0.3174
+......017 Frame #005 VS #024 res:   1.1206
+......025 Frame #006 VS #008 res:   0.3187
+......026 Frame #006 VS #009 res:   0.0323
+......029 Frame #006 VS #012 res:   0.2198
+......033 Frame #006 VS #016 res:   0.1133
+......036 Frame #006 VS #019 res:   0.3638
+......037 Frame #006 VS #020 res:   0.4402
+......046 Frame #006 VS #029 res:   0.7857
+......052 Frame #007 VS #012 res:   0.5622
+......053 Frame #007 VS #013 res:   0.5556
+......059 Frame #007 VS #019 res:   1.1670
+......065 Frame #007 VS #025 res:   0.2118
+......066 Frame #007 VS #026 res:   0.2054
+......068 Frame #007 VS #028 res:   0.3651
+......069 Frame #007 VS #029 res:   0.3140
+......070 Frame #007 VS #030 res:   0.1986
+......075 Frame #008 VS #013 res:   0.6231
+......078 Frame #008 VS #016 res:   0.8408
+......085 Frame #008 VS #023 res:   0.4113
+......086 Frame #008 VS #024 res:   0.4164
+......087 Frame #008 VS #025 res:   0.1863
+......088 Frame #008 VS #026 res:   0.0908
+......089 Frame #008 VS #027 res:   0.0928
+......090 Frame #008 VS #028 res:   0.1663
+......091 Frame #008 VS #029 res:   0.1245
+......092 Frame #008 VS #030 res:   0.0901
+......095 Frame #009 VS #012 res:   0.8959
+......101 Frame #009 VS #018 res:   0.6992
+......103 Frame #009 VS #020 res:   0.7491
+......104 Frame #009 VS #021 res:   0.4758
+......105 Frame #009 VS #022 res:   0.3646
+......106 Frame #009 VS #023 res:   0.1329
+......107 Frame #009 VS #024 res:   0.1572
+......110 Frame #009 VS #027 res:   0.3270
+......111 Frame #009 VS #028 res:   0.2934
+......112 Frame #009 VS #029 res:   0.3379
+......113 Frame #009 VS #030 res:   0.2806
+......114 Frame #009 VS #031 res:   0.1211
+......117 Frame #010 VS #014 res:   1.1415
+......121 Frame #010 VS #018 res:   0.5843
+......122 Frame #010 VS #019 res:   0.7447
+......123 Frame #010 VS #020 res:   0.6726
+......124 Frame #010 VS #021 res:   0.3597
+......125 Frame #010 VS #022 res:   0.2529
+......126 Frame #010 VS #023 res:   0.0686
+......127 Frame #010 VS #024 res:   0.2273
+......129 Frame #010 VS #026 res:   0.5417
+......130 Frame #010 VS #027 res:   0.5147
+......131 Frame #010 VS #028 res:   0.3863
+......132 Frame #010 VS #029 res:   0.4296
+......133 Frame #010 VS #030 res:   0.3558
+......134 Frame #010 VS #031 res:   0.2798
+......137 Frame #011 VS #015 res:   0.8165
+......140 Frame #011 VS #018 res:   0.8680
+......150 Frame #011 VS #028 res:   0.0420
+......151 Frame #011 VS #029 res:   0.0925
+......152 Frame #011 VS #030 res:   0.0843
+......153 Frame #011 VS #031 res:   0.1458
+......158 Frame #012 VS #018 res:   0.4458
+......159 Frame #012 VS #019 res:   0.5642
+......160 Frame #012 VS #020 res:   0.5384
+......161 Frame #012 VS #021 res:   0.2670
+......163 Frame #012 VS #023 res:   0.1712
+......164 Frame #012 VS #024 res:   0.0921
+......166 Frame #012 VS #026 res:   0.4567
+......167 Frame #012 VS #027 res:   0.6698
+......168 Frame #012 VS #028 res:   0.4149
+......169 Frame #012 VS #029 res:   0.5450
+......170 Frame #012 VS #030 res:   0.4479
+......171 Frame #012 VS #031 res:   0.2483
+......174 Frame #013 VS #017 res:   0.8847
+......175 Frame #013 VS #018 res:   0.4107
+......176 Frame #013 VS #019 res:   0.4826
+......177 Frame #013 VS #020 res:   0.5014
+......178 Frame #013 VS #021 res:   0.2343
+......179 Frame #013 VS #022 res:   0.1301
+......180 Frame #013 VS #023 res:   0.1182
+......181 Frame #013 VS #024 res:   0.1650
+......183 Frame #013 VS #026 res:   0.6697
+......184 Frame #013 VS #027 res:   0.6193
+......185 Frame #013 VS #028 res:   0.4937
+......186 Frame #013 VS #029 res:   0.6253
+......187 Frame #013 VS #030 res:   0.4097
+......188 Frame #013 VS #031 res:   0.3736
+......192 Frame #014 VS #019 res:   0.5994
+......194 Frame #014 VS #021 res:   0.3773
+......197 Frame #014 VS #024 res:   0.1472
+......201 Frame #014 VS #028 res:   0.5298
+......203 Frame #014 VS #030 res:   0.4340
+......204 Frame #014 VS #031 res:   0.3343
+......205 Frame #015 VS #017 res:   0.9908
+......206 Frame #015 VS #018 res:   0.4290
+......207 Frame #015 VS #019 res:   0.5453
+......209 Frame #015 VS #021 res:   0.3051
+......211 Frame #015 VS #023 res:   0.1783
+......212 Frame #015 VS #024 res:   0.1810
+......216 Frame #015 VS #028 res:   0.4446
+......218 Frame #015 VS #030 res:   0.5701
+......219 Frame #015 VS #031 res:   0.3985
+......220 Frame #016 VS #018 res:   0.5371
+......222 Frame #016 VS #020 res:   0.7151
+......223 Frame #016 VS #021 res:   0.4026
+......224 Frame #016 VS #022 res:   0.2062
+......225 Frame #016 VS #023 res:   0.0365
+......226 Frame #016 VS #024 res:   0.1155
+......228 Frame #016 VS #026 res:   0.4119
+......229 Frame #016 VS #027 res:   0.5337
+......230 Frame #016 VS #028 res:   0.4121
+......231 Frame #016 VS #029 res:   0.4104
+......232 Frame #016 VS #030 res:   0.3626
+......233 Frame #016 VS #031 res:   0.1016
+......234 Frame #017 VS #019 res:   0.6665
+......236 Frame #017 VS #021 res:   0.5856
+......237 Frame #017 VS #022 res:   0.2982
+......238 Frame #017 VS #023 res:   0.1565
+......239 Frame #017 VS #024 res:   0.1395
+......241 Frame #017 VS #026 res:   0.2755
+......242 Frame #017 VS #027 res:   0.3048
+......243 Frame #017 VS #028 res:   0.2355
+......244 Frame #017 VS #029 res:   0.2925
+......245 Frame #017 VS #030 res:   0.1469
+......246 Frame #017 VS #031 res:   0.1770
+......248 Frame #018 VS #021 res:   1.0143
+......250 Frame #018 VS #023 res:   0.5791
+......251 Frame #018 VS #024 res:   0.5914
+......253 Frame #018 VS #026 res:   0.2036
+......254 Frame #018 VS #027 res:   0.1281
+......255 Frame #018 VS #028 res:   0.2565
+......256 Frame #018 VS #029 res:   0.1241
+......257 Frame #018 VS #030 res:   0.3438
+......258 Frame #018 VS #031 res:   0.4674
+......260 Frame #019 VS #022 res:   0.7597
+......261 Frame #019 VS #023 res:   0.5170
+......262 Frame #019 VS #024 res:   0.5586
+......264 Frame #019 VS #026 res:   0.2064
+......265 Frame #019 VS #027 res:   0.1736
+......266 Frame #019 VS #028 res:   0.2421
+......267 Frame #019 VS #029 res:   0.1628
+......268 Frame #019 VS #030 res:   0.2265
+......269 Frame #019 VS #031 res:   0.4432
+......270 Frame #020 VS #022 res:   0.7248
+......271 Frame #020 VS #023 res:   0.5318
+......272 Frame #020 VS #024 res:   0.4954
+......273 Frame #020 VS #025 res:   0.0565
+......274 Frame #020 VS #026 res:   0.1157
+......275 Frame #020 VS #027 res:   0.1449
+......276 Frame #020 VS #028 res:   0.2449
+......277 Frame #020 VS #029 res:   0.1123
+......278 Frame #020 VS #030 res:   0.1714
+......280 Frame #021 VS #023 res:   0.7123
+......281 Frame #021 VS #024 res:   0.8068
+......283 Frame #021 VS #026 res:   0.3475
+......284 Frame #021 VS #027 res:   0.3076
+......285 Frame #021 VS #028 res:   0.4254
+......286 Frame #021 VS #029 res:   0.2504
+......287 Frame #021 VS #030 res:   0.5233
+......288 Frame #021 VS #031 res:   0.6027
+......291 Frame #022 VS #026 res:   0.4957
+......292 Frame #022 VS #027 res:   0.5470
+......293 Frame #022 VS #028 res:   0.6679
+......294 Frame #022 VS #029 res:   0.4502
+......295 Frame #022 VS #030 res:   0.5465
+......298 Frame #023 VS #026 res:   0.7770
+......299 Frame #023 VS #027 res:   0.8289
+......301 Frame #023 VS #029 res:   0.8200
+......305 Frame #024 VS #027 res:   0.7799
+......306 Frame #024 VS #028 res:   0.8701
+......308 Frame #024 VS #030 res:   0.8677
+
+Round 2 with 154 exception(s)
+Residue of over-determinated equation:
+......000 Frame #005 VS #007 res:   0.2339
+......001 Frame #005 VS #008 res:   0.1834
+......002 Frame #005 VS #009 res:   0.1983
+......006 Frame #005 VS #013 res:   0.4378
+......009 Frame #005 VS #016 res:   0.3549
+......011 Frame #005 VS #018 res:   0.3258
+......013 Frame #005 VS #020 res:   0.2546
+......025 Frame #006 VS #008 res:   0.3172
+......026 Frame #006 VS #009 res:   0.0231
+......029 Frame #006 VS #012 res:   0.2225
+......033 Frame #006 VS #016 res:   0.1068
+......036 Frame #006 VS #019 res:   0.3506
+......037 Frame #006 VS #020 res:   0.4384
+......046 Frame #006 VS #029 res:   0.7868
+......052 Frame #007 VS #012 res:   0.5608
+......053 Frame #007 VS #013 res:   0.5319
+......065 Frame #007 VS #025 res:   0.1971
+......066 Frame #007 VS #026 res:   0.1406
+......068 Frame #007 VS #028 res:   0.2627
+......069 Frame #007 VS #029 res:   0.1670
+......070 Frame #007 VS #030 res:   0.1646
+......075 Frame #008 VS #013 res:   0.6227
+......078 Frame #008 VS #016 res:   0.8410
+......085 Frame #008 VS #023 res:   0.4123
+......086 Frame #008 VS #024 res:   0.4147
+......087 Frame #008 VS #025 res:   0.1862
+......088 Frame #008 VS #026 res:   0.0916
+......089 Frame #008 VS #027 res:   0.0882
+......090 Frame #008 VS #028 res:   0.1656
+......091 Frame #008 VS #029 res:   0.1274
+......092 Frame #008 VS #030 res:   0.0864
+......095 Frame #009 VS #012 res:   0.8950
+......101 Frame #009 VS #018 res:   0.6363
+......103 Frame #009 VS #020 res:   0.7503
+......104 Frame #009 VS #021 res:   0.5391
+......105 Frame #009 VS #022 res:   0.3656
+......106 Frame #009 VS #023 res:   0.1353
+......107 Frame #009 VS #024 res:   0.0656
+......110 Frame #009 VS #027 res:   0.3276
+......111 Frame #009 VS #028 res:   0.2945
+......112 Frame #009 VS #029 res:   0.3354
+......113 Frame #009 VS #030 res:   0.2738
+......114 Frame #009 VS #031 res:   0.1360
+......121 Frame #010 VS #018 res:   0.5026
+......122 Frame #010 VS #019 res:   0.7097
+......123 Frame #010 VS #020 res:   0.6599
+......124 Frame #010 VS #021 res:   0.4094
+......125 Frame #010 VS #022 res:   0.2619
+......126 Frame #010 VS #023 res:   0.0479
+......127 Frame #010 VS #024 res:   0.1444
+......129 Frame #010 VS #026 res:   0.5546
+......130 Frame #010 VS #027 res:   0.4840
+......131 Frame #010 VS #028 res:   0.3645
+......132 Frame #010 VS #029 res:   0.4295
+......133 Frame #010 VS #030 res:   0.3800
+......134 Frame #010 VS #031 res:   0.3008
+......137 Frame #011 VS #015 res:   0.8056
+......140 Frame #011 VS #018 res:   0.8151
+......150 Frame #011 VS #028 res:   0.0322
+......151 Frame #011 VS #029 res:   0.0914
+......152 Frame #011 VS #030 res:   0.0757
+......153 Frame #011 VS #031 res:   0.1590
+......158 Frame #012 VS #018 res:   0.3820
+......159 Frame #012 VS #019 res:   0.5417
+......160 Frame #012 VS #020 res:   0.5386
+......161 Frame #012 VS #021 res:   0.3280
+......163 Frame #012 VS #023 res:   0.1712
+......164 Frame #012 VS #024 res:   0.0901
+......166 Frame #012 VS #026 res:   0.4551
+......167 Frame #012 VS #027 res:   0.6699
+......168 Frame #012 VS #028 res:   0.4160
+......169 Frame #012 VS #029 res:   0.5438
+......170 Frame #012 VS #030 res:   0.4495
+......171 Frame #012 VS #031 res:   0.2464
+......174 Frame #013 VS #017 res:   0.8886
+......175 Frame #013 VS #018 res:   0.3463
+......176 Frame #013 VS #019 res:   0.4631
+......177 Frame #013 VS #020 res:   0.5019
+......178 Frame #013 VS #021 res:   0.2920
+......179 Frame #013 VS #022 res:   0.1261
+......180 Frame #013 VS #023 res:   0.1184
+......181 Frame #013 VS #024 res:   0.0731
+......183 Frame #013 VS #026 res:   0.6676
+......184 Frame #013 VS #027 res:   0.6187
+......185 Frame #013 VS #028 res:   0.4961
+......186 Frame #013 VS #029 res:   0.6248
+......187 Frame #013 VS #030 res:   0.4070
+......188 Frame #013 VS #031 res:   0.3708
+......192 Frame #014 VS #019 res:   0.5953
+......194 Frame #014 VS #021 res:   0.4259
+......197 Frame #014 VS #024 res:   0.0158
+......201 Frame #014 VS #028 res:   0.4508
+......203 Frame #014 VS #030 res:   0.3524
+......204 Frame #014 VS #031 res:   0.2314
+......205 Frame #015 VS #017 res:   0.9955
+......206 Frame #015 VS #018 res:   0.3598
+......207 Frame #015 VS #019 res:   0.5437
+......209 Frame #015 VS #021 res:   0.3677
+......211 Frame #015 VS #023 res:   0.1605
+......212 Frame #015 VS #024 res:   0.1929
+......216 Frame #015 VS #028 res:   0.4380
+......218 Frame #015 VS #030 res:   0.5635
+......219 Frame #015 VS #031 res:   0.3981
+......220 Frame #016 VS #018 res:   0.4737
+......222 Frame #016 VS #020 res:   0.7174
+......223 Frame #016 VS #021 res:   0.4632
+......224 Frame #016 VS #022 res:   0.2084
+......225 Frame #016 VS #023 res:   0.0356
+......226 Frame #016 VS #024 res:   0.0225
+......228 Frame #016 VS #026 res:   0.4096
+......229 Frame #016 VS #027 res:   0.5343
+......230 Frame #016 VS #028 res:   0.4133
+......231 Frame #016 VS #029 res:   0.4088
+......232 Frame #016 VS #030 res:   0.3612
+......233 Frame #016 VS #031 res:   0.1074
+......234 Frame #017 VS #019 res:   0.6388
+......236 Frame #017 VS #021 res:   0.6447
+......237 Frame #017 VS #022 res:   0.2977
+......238 Frame #017 VS #023 res:   0.1748
+......239 Frame #017 VS #024 res:   0.1023
+......241 Frame #017 VS #026 res:   0.2835
+......242 Frame #017 VS #027 res:   0.3076
+......243 Frame #017 VS #028 res:   0.2415
+......244 Frame #017 VS #029 res:   0.3058
+......245 Frame #017 VS #030 res:   0.1562
+......246 Frame #017 VS #031 res:   0.1690
+......250 Frame #018 VS #023 res:   0.6435
+......251 Frame #018 VS #024 res:   0.6396
+......253 Frame #018 VS #026 res:   0.2696
+......254 Frame #018 VS #027 res:   0.1935
+......255 Frame #018 VS #028 res:   0.3124
+......256 Frame #018 VS #029 res:   0.1855
+......257 Frame #018 VS #030 res:   0.4064
+......258 Frame #018 VS #031 res:   0.5283
+......260 Frame #019 VS #022 res:   0.7649
+......261 Frame #019 VS #023 res:   0.5251
+......262 Frame #019 VS #024 res:   0.5686
+......264 Frame #019 VS #026 res:   0.1981
+......265 Frame #019 VS #027 res:   0.1072
+......266 Frame #019 VS #028 res:   0.2367
+......267 Frame #019 VS #029 res:   0.1132
+......268 Frame #019 VS #030 res:   0.2076
+......269 Frame #019 VS #031 res:   0.4599
+......270 Frame #020 VS #022 res:   0.7231
+......271 Frame #020 VS #023 res:   0.5294
+......272 Frame #020 VS #024 res:   0.4862
+......273 Frame #020 VS #025 res:   0.0112
+......274 Frame #020 VS #026 res:   0.1162
+......275 Frame #020 VS #027 res:   0.1567
+......276 Frame #020 VS #028 res:   0.2401
+......277 Frame #020 VS #029 res:   0.1124
+......278 Frame #020 VS #030 res:   0.1633
+......280 Frame #021 VS #023 res:   0.6504
+......281 Frame #021 VS #024 res:   0.7384
+......283 Frame #021 VS #026 res:   0.2832
+......284 Frame #021 VS #027 res:   0.2444
+......285 Frame #021 VS #028 res:   0.3620
+......286 Frame #021 VS #029 res:   0.1890
+......287 Frame #021 VS #030 res:   0.4602
+......288 Frame #021 VS #031 res:   0.5369
+......291 Frame #022 VS #026 res:   0.4969
+......292 Frame #022 VS #027 res:   0.5466
+......293 Frame #022 VS #028 res:   0.6663
+......294 Frame #022 VS #029 res:   0.4503
+......295 Frame #022 VS #030 res:   0.5454
+......298 Frame #023 VS #026 res:   0.7788
+......299 Frame #023 VS #027 res:   0.8287
+......301 Frame #023 VS #029 res:   0.8207
+......305 Frame #024 VS #027 res:   0.7856
+......306 Frame #024 VS #028 res:   0.8647
+......308 Frame #024 VS #030 res:   0.8716
+All residues of alignment are in threshold.
+
+Adjacent drift:
+......Shift of Frame #005 :   0.2123   0.2324
+......Shift of Frame #006 :   0.6605   0.5683
+......Shift of Frame #007 :   0.0948   0.1049
+......Shift of Frame #008 :   0.2664   0.2565
+......Shift of Frame #009 :   0.0746   0.1144
+......Shift of Frame #010 :  -0.2597  -0.1783
+......Shift of Frame #011 :   0.3568   0.2516
+......Shift of Frame #012 :   0.0342   0.0169
+......Shift of Frame #013 :  -0.0838  -0.1049
+......Shift of Frame #014 :  -0.0223   0.1766
+......Shift of Frame #015 :  -0.0156  -0.1922
+......Shift of Frame #016 :  -0.0687  -0.1256
+......Shift of Frame #017 :  -0.4525  -0.3720
+......Shift of Frame #018 :   0.0602   0.0406
+......Shift of Frame #019 :   0.0135  -0.0191
+......Shift of Frame #020 :  -0.1678  -0.1288
+......Shift of Frame #021 :  -0.2067  -0.2244
+......Shift of Frame #022 :  -0.2026  -0.1965
+......Shift of Frame #023 :   0.0151  -0.0164
+......Shift of Frame #024 :  -0.3841  -0.3786
+......Shift of Frame #025 :   0.0720   0.0421
+......Shift of Frame #026 :  -0.0323  -0.0216
+......Shift of Frame #027 :   0.0728   0.0347
+......Shift of Frame #028 :  -0.0793  -0.0396
+......Shift of Frame #029 :   0.0756   0.0580
+......Shift of Frame #030 :   0.1011   0.1321
+
+Sum Frame #005 - #031
+......Add Frame #005 with xy shift:   0.0000   0.0000
+......Add Frame #006 with xy shift:   0.2123   0.2324
+......Add Frame #007 with xy shift:   0.8728   0.8007
+......Add Frame #008 with xy shift:   0.9676   0.9056
+......Add Frame #009 with xy shift:   1.2340   1.1621
+......Add Frame #010 with xy shift:   1.3086   1.2765
+......Add Frame #011 with xy shift:   1.0489   1.0982
+......Add Frame #012 with xy shift:   1.4057   1.3498
+......Add Frame #013 with xy shift:   1.4398   1.3667
+......Add Frame #014 with xy shift:   1.3560   1.2618
+......Add Frame #015 with xy shift:   1.3338   1.4384
+......Add Frame #016 with xy shift:   1.3182   1.2462
+......Add Frame #017 with xy shift:   1.2495   1.1206
+......Add Frame #018 with xy shift:   0.7970   0.7486
+......Add Frame #019 with xy shift:   0.8572   0.7893
+......Add Frame #020 with xy shift:   0.8706   0.7702
+......Add Frame #021 with xy shift:   0.7029   0.6414
+......Add Frame #022 with xy shift:   0.4962   0.4169
+......Add Frame #023 with xy shift:   0.2936   0.2205
+......Add Frame #024 with xy shift:   0.3086   0.2041
+......Add Frame #025 with xy shift:  -0.0755  -0.1745
+......Add Frame #026 with xy shift:  -0.0035  -0.1325
+......Add Frame #027 with xy shift:  -0.0358  -0.1541
+......Add Frame #028 with xy shift:   0.0370  -0.1193
+......Add Frame #029 with xy shift:  -0.0422  -0.1589
+......Add Frame #030 with xy shift:   0.0334  -0.1009
+......Add Frame #031 with xy shift:   0.1345   0.0312
