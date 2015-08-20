@@ -28,7 +28,7 @@ scatter(XRaw, YRaw, c = "red", s = 10, alpha = 0.5, linewidths = 1,
 scatter(XCorrected, YCorrected, c = "blue", s = 10, alpha = 0.5, linewidths = 1,
         marker = u"+")
 
-xlim(0, 500)
+xlim(0, XRaw[-1])
 ylim(0, 1)
 
 xlabel(sys.argv[4])
