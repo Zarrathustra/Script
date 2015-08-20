@@ -5,6 +5,7 @@
 import os
 import sys
 from pylab import *
+import matplotlib.patches as mpatches
 
 filenameRaw = sys.argv[1]
 filenameCorrected = sys.argv[2]
@@ -23,15 +24,25 @@ YCorrected = [float(y) for y in YCorrected]
 
 figure(figsize = (10, 5), dpi = 500)
 
-scatter(XRaw, YRaw, c = "red", s = 10, alpha = 0.5, linewidths = 1,
-        marker = u"+")
-scatter(XCorrected, YCorrected, c = "blue", s = 10, alpha = 0.5, linewidths = 1,
-        marker = u"+")
+colorRaw = "red"
+colorCorrected = "blue"
 
-xlim(0, XRaw[-1])
+scatter(XRaw, YRaw, c = colorRaw, s = 10, alpha = 0.5, linewidths = 1,
+        marker = u"+")
+scatter(XCorrected, YCorrected, c = colorCorrected, s = 10, alpha = 0.5,
+        linewidths = 1, marker = u"+")
+
+xlim(0, 800)
 ylim(0, 1)
 
 xlabel(sys.argv[4])
 ylabel(sys.argv[5])
+
+patchRaw = mpatches.Patch(color = colorRaw, label = "Raw")
+patchCorrected = mpatches.Patch(color = colorCorrected, label = "Corrected")
+
+legend(handles = [patchRaw, patchCorrected])
+
+title("FRC Comparision Between Raw Stack and Motion Corrected Stack")
 
 savefig(sys.argv[3], dpi = 500)
