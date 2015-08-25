@@ -33,4 +33,3 @@ xlim(0, int(int(X[-1]) * 0.8))
 ylim(0.5, 1)
 
 savefig("../Figures/InterpolationComparisonPlot.png", dpi = 200)
-show()
