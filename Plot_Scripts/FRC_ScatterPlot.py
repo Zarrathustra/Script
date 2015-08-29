@@ -1,6 +1,7 @@
 # argument 1 : the filename of input data
 # argument 2 : the xlabel
 # argument 3 : the ylabel
+# argument 4 : the title
 
 import os
 import sys
@@ -28,6 +29,8 @@ ylim(0, 1)
 
 xlabel(sys.argv[2])
 ylabel(sys.argv[3])
+
+title(sys.argv[4])
 
 basename = os.path.basename(filename)
 basename = os.path.splitext(basename)[0]
