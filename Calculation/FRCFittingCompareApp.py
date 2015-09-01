@@ -75,6 +75,8 @@ ylim(0, 1)
 xlabel("Frequency")
 ylabel("FRC")
 
+title("FRC Comparison Between Raw and Motion-Corrected Stack")
+
 def ctf(x, u):
     chi = u * x * x / (N * pixelSize) / (N * pixelSize)
     return -sqrt(1 - A * A) * sin(chi) - A * cos(chi)
@@ -123,13 +125,6 @@ def lsqSolve(Y, X, ls, lab):
 lsqSolve(YA, XA, "--", "Raw")
 lsqSolve(YB, XB, "-", "Corrected")
 
-patchAmpBackg = mpatches.Patch(color = "red", label = "Amplitude + Background")
-patchBackg = mpatches.Patch(color = "green", label = "Background")
-patchAmp = mpatches.Patch(color = "blue", label = "Amplitude")
-patchRaw = mpatches.Patch(linestyle = "dashed", label = "Raw")
-patchCorrected = mpatches.Patch(linestyle = "solid", label = "Corrected")
-
 legend()
-# legend(handles = [patchAmpBackg, patchBackg, patchAmp, patchRaw, patchCorrected])
 
 savefig("../Figures/" + basenameA + basenameB + ".png", dpi = 800)
