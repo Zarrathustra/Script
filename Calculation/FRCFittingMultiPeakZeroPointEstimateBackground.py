@@ -54,36 +54,51 @@ for i in range(size(X)):
 X = array(X_New)
 Y = array(Y_New)
 
-def ctf(w, u):
-    chi = u * w * w / (N * pixelSize) / (N * pixelSize)
+def ctf(x, u):
+    chi = u * x * x / (N * pixelSize) / (N * pixelSize)
     return -sqrt(1 - A * A) * sin(chi) - A * cos(chi)
 
-def errfunc(p, y, x):
-    a1, a2, b1, b2, c, u = p
+def amp(x, a1, a2, b1, b2, c):
     w = x / (pixelSize * N)
-    err = y - (a1 * exp(-b1 * w * w) + a2 * exp(-b2 * w * w) + c) * abs(ctf(x, u))
-    return err
+    return a1 * exp(-b1 * w * w) + a2 * exp(-b2 * w * w) + c
+
+def re(x):
+    if (x < 0):
+        return 0
+    else:
+        return x
+
+def backg(x, d, e, f):
+    w = x / (pixelSize * N)
+    res = d * cos(e * (w - f))
+    return array([re(x) for x in res])
 
 def func(p, x):
-    a1, a2, b1, b2, c, u= p
-    print a1, a2, b1, b2, c, u
-    w = x / (pixelSize * N)
-    return (a1 * exp(-b1 * w * w) + a2 * exp(-b2 * w * w) + c) * abs(ctf(x, u))
+    a1, a2, b1, b2, c, u, d, e, f = p
+    return amp(x, a1, a2, b1, b2, c) * abs(ctf(x, u)) + backg(x, d, e, f)
 
-p0 = [1, -1, 0, 0, 0, u0]
+def errfunc(p, y, x):
+    err = y - func(p, x)
+    return err
+
+p0 = [0.5, 0.5, 700, 150, 0, u0, 0.05, 5, 0.3]
 
 plsq = leastsq(errfunc, p0, args = (Y, X), maxfev = 20000)
 print plsq[0]
 
 X_Fit = linspace(lb, rb, 10000)
+
 Y_Fit = func(plsq[0], X_Fit)
-print Y_Fit
+Y_Amp = amp(X_Fit, plsq[0][0], plsq[0][1], plsq[0][2], plsq[0][3], plsq[0][4])
+Y_Backg = backg(X_Fit, plsq[0][6], plsq[0][7], plsq[0][8])
 
 plot(X_Fit, Y_Fit, c = "blue", linewidth = 1)
+plot(X_Fit, Y_Amp + Y_Backg, c = "red", linewidth = 1)
+plot(X_Fit, Y_Backg, c = "green", linewidth = 1)
 
-# patchConst = mpatches.Patch(color = "red", label = "Constant")
-# patchGaussian = mpatches.Patch(color = "blue", label = "Gaussian")
+patchAmpBackg = mpatches.Patch(color = "red", label = "Amplitude + Background")
+patchBackg = mpatches.Patch(color = "green", label = "Background")
 
-# legend(handles = [patchConst, patchGaussian])
+legend(handles = [patchAmpBackg, patchBackg])
 
-savefig("../Figures/FRCFittingMultiPeakZeroPointEstimate.png", dpi = 800)
+savefig("../Figures/FRCFittingMultiPeakZeroPointEstimateBackground.png", dpi = 800)
