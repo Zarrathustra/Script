@@ -79,7 +79,7 @@ ylim(0, 1)
 xlabel("Frequency")
 ylabel("FRC")
 
-title("FRC Comparison Stack")
+title("FRC Comparison Between Whole Frame and Local Motion-Correction")
 
 def ctf(x, u):
     chi = u * x * x / (N * pixelSize) / (N * pixelSize)
@@ -110,7 +110,7 @@ def errfunc(p, y, x):
 
 p0 = [0.5, 0.5, 700, 150, 0, u0, 0.05, 5, 0.3]
 
-def lsqSolve(Y, X, color, lab):
+def lsqSolve(Y, X, color, lab, lw):
     plsq = leastsq(errfunc, p0, args = (Y, X), maxfev = 20000)
     print plsq[0]
 
@@ -119,12 +119,12 @@ def lsqSolve(Y, X, color, lab):
     Y_Amp = amp(X_Fit, plsq[0][0], plsq[0][1], plsq[0][2], plsq[0][3], plsq[0][4])
     Y_Backg = backg(X_Fit, plsq[0][6], plsq[0][7], plsq[0][8])
 
-    plot(X_Fit, Y_Amp, c = color, linewidth = 2,
+    plot(X_Fit, Y_Amp, c = color, linewidth = lw,
          label = lab)
 
-lsqSolve(YA, XA, "black", "Raw")
-lsqSolve(YB, XB, "red", "Convention")
-lsqSolve(YC, XC, "blue", "Local")
+lsqSolve(YA, XA, "black", "Raw", 1.5)
+lsqSolve(YB, XB, "red", "Whole Frame Motion-Correction", 2.5)
+lsqSolve(YC, XC, "blue", "Local Motion-Correction", 1.5)
 
 legend()
 
