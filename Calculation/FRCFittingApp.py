@@ -95,7 +95,7 @@ def errfunc(p, y, x):
     err = y - func(p, x)
     return err
 
-p0 = [0.5, 0.5, 700, 150, 0, u0, 0.05, 5, 0.3]
+p0 = [0.5, 0.5, 700, 150, 0, u0, 0.05, 5, 0.35]
 
 plsq = leastsq(errfunc, p0, args = (Y, X), maxfev = 20000)
 print plsq[0]

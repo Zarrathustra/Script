@@ -67,10 +67,10 @@ def readIn(filename):
 XA, YA = readIn(filenameA)
 XB, YB = readIn(filenameB)
 
-figure(figsize = (10, 5), dpi = 800)
+figure(figsize = (10, 10), dpi = 800)
 
 xlim(lb, rb)
-ylim(0, 1)
+ylim(0, 0.2)
 
 xlabel("Frequency")
 ylabel("FRC")
@@ -104,7 +104,9 @@ def errfunc(p, y, x):
     err = y - func(p, x)
     return err
 
-p0 = [0.5, 0.5, 700, 150, 0, u0, 0.05, 5, 0.3]
+p0 = [0.5, 0.5, 700, 150, 0, u0, 0.05, 5, 0.35]
+
+lw = 1.5
 
 def lsqSolve(Y, X, ls, lab):
     plsq = leastsq(errfunc, p0, args = (Y, X), maxfev = 20000)
@@ -115,15 +117,15 @@ def lsqSolve(Y, X, ls, lab):
     Y_Amp = amp(X_Fit, plsq[0][0], plsq[0][1], plsq[0][2], plsq[0][3], plsq[0][4])
     Y_Backg = backg(X_Fit, plsq[0][6], plsq[0][7], plsq[0][8])
 
-    plot(X_Fit, Y_Amp + Y_Backg, c = "red", linewidth = 2, linestyle = ls,
+    plot(X_Fit, Y_Amp + Y_Backg, c = "red", linewidth = lw, linestyle = ls,
          label = lab + "  Amplitude + Background")
-    plot(X_Fit, Y_Backg, c = "green", linewidth = 2, linestyle = ls,
+    plot(X_Fit, Y_Backg, c = "green", linewidth = lw, linestyle = ls,
          label = lab + "  Background")
-    plot(X_Fit, Y_Amp, c = "blue", linewidth = 2, linestyle = ls,
+    plot(X_Fit, Y_Amp, c = "blue", linewidth = lw, linestyle = ls,
          label = lab + "  Amplitude")
 
-lsqSolve(YA, XA, "--", "Raw")
-lsqSolve(YB, XB, "-", "Corrected")
+lsqSolve(YA, XA, "--", "Local")
+lsqSolve(YB, XB, "-", "Total")
 
 legend()
 
