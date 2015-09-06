@@ -31,8 +31,8 @@ Y24_26 = array([float(y) for y in Y24_26])
 lines = open("../Data/FRC_stack_1308/FRC_stack_1308_2x_Corrected_27.txt", "r").readlines();
 X27_29 = [line.strip().split()[0] for line in lines]
 Y27_29 = [line.strip().split()[1] for line in lines]
-X27_29 = array([float(x) for x in X24_26])
-Y27_29 = array([float(y) for y in Y24_26])
+X27_29 = array([float(x) for x in X27_29])
+Y27_29 = array([float(y) for y in Y27_29])
 
 # set parameters
 
