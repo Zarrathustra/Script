@@ -75,7 +75,7 @@ ylim(0, 0.2)
 xlabel("Frequency")
 ylabel("FRC")
 
-title("FRC Comparison Between Raw and Motion-Corrected Stack")
+title("FRC Comparison Between Local and Total Motion Correction")
 
 def ctf(x, u):
     chi = u * x * x / (N * pixelSize) / (N * pixelSize)

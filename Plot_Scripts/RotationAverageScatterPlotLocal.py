@@ -42,6 +42,9 @@ annotate("2nd zero point",
 xlim(X[0], X[-1])
 ylim(0, 1)
 
+xlabel("Frequnecy")
+ylabel("FRC")
+
 title("Local Region of Rotation Average of an Ideal CTF with Astigmatism")
 
 savefig("../Figures/RotationAverageCTFAstigmatismLocal.png", dpi = 200)

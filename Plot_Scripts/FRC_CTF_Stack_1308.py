@@ -1,12 +1,18 @@
 from pylab import *
 
-lines = open("../Data/stack_1308_CTF.txt", "r").readlines();
+N = 3838
 
-XCTF = [line.strip().split()[0] for line in lines]
-YCTF = [line.strip().split()[1] for line in lines]
+A = 0.07
 
-XCTF = [float(x) for x in XCTF]
-YCTF = [float(y) for y in YCTF]
+DF1 = 17963
+DF2 = 18713
+lam = 0.0196
+
+pixelSize = 1.32
+
+def ctf(w):
+    chi = pi * lam * w * w / (N * pixelSize) / (N * pixelSize) * (DF1 + DF2) / 2
+    return -sqrt(1 - A * A) * sin(chi) - A * cos(chi)
 
 lines = open("../Data/stack_1308_FRC.txt", "r").readlines();
 
@@ -16,10 +22,12 @@ YFRC = [line.strip().split()[1] for line in lines]
 XFRC = [float(x) for x in XFRC]
 YFRC = [float(y) for y in YFRC]
 
+XCTF = linspace(XFRC[0], XFRC[-1], 10000)
+YCTF = [abs(ctf(x)) for x in XCTF]
+
 figure(figsize = (10, 5), dpi = 800)
 
-scatter(XCTF, YCTF, c = "red", linewidth = 1, marker = u'+');
-plot(XCTF, YCTF, c = "red", linewidth = 0.5)
+plot(XCTF, YCTF, c = "red", linewidth = 1)
 scatter(XFRC, YFRC, c = "blue", linewidth = 1, marker = u'+');
 
 xlim(0, 1000)
