@@ -32,6 +32,3 @@ def seperateSphere(limit):
             sphere.phi += deltaPhi
 
         sphere.theta += deltaTheta 
-
-for point in seperateSphere(1000):
-    print("%f %f %f" % point)
