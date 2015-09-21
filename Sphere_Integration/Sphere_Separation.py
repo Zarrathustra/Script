@@ -13,6 +13,11 @@ class Sphere:
         z = self.radius * cos(self.theta)
         return x, y, z
 
+
+def integrateArea(radius, n, m):
+    return (pi * radius) ** 2 / (4 * (n - abs(m - n)) * n) \
+         * sin(m * pi / (2 * n))
+
 def seperateSphere(limit):
 
     sphere = Sphere(1, 0, 0)

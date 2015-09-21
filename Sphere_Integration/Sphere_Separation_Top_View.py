@@ -61,4 +61,9 @@ for i in range(0, 4 * n + 4):
     plot([x1[i % (4 * n + 4)], x1[(i + 1) % (4 * n + 4)]],
          [y1[i % (4 * n + 4)], y1[(i + 1) % (4 * n + 4)]], c = colors[n + 1])
 
-savefig("test.png", dpi = 200)
+xlim(-5, 5)
+ylim(-5, 5)
+
+title("Pseudo-Even Sphere Separation Top View")
+
+savefig("../Figures/Pseudo_Even_Sphere_Separation_Top_View.png", dpi = 200)
