@@ -44,8 +44,6 @@ ax.set_zticks([-1, 1])
 
 ax.set_title(filename + " Symmetry")
 
-cm = get_cmap("winter")
-cmap = [cm(y) for y in Y]
-ax.scatter(X, Y, Z, c = cmap)
+ax.scatter(X, Y, Z)
 
 savefig("../Figures/Symmetry_" + filename + ".png", dpi = 300)

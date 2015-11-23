@@ -27,10 +27,8 @@ fig = figure(figsize = (10, 10), dpi = 300)
 
 ax = fig.add_subplot(111, projection = '3d')
 
-# cm = get_cmap("RdYlGn")
-cm = get_cmap("winter")
-cmap = [cm(z) for z in Z]
-ax.scatter(X, Y, Z, c = cmap)
+for i in range(len(X)):
+    ax.plot([0, X[i]], [0, Y[i]], [0, Z[i]], color = "grey", alpha = 0.1)
 
 ax.set_xlabel("X")
 ax.set_ylabel("Y")
@@ -45,5 +43,9 @@ ax.set_yticks([-1, 1])
 ax.set_zticks([-1, 1])
 
 ax.set_title(filename + " Symmetry")
+
+cm = get_cmap("winter")
+cmap = [cm(z) for z in Z]
+ax.scatter(X, Y, Z, c = cmap)
 
 savefig("../Figures/Symmetry_" + filename + ".png", dpi = 300)
