@@ -14,5 +14,11 @@ CI:
 CS:
 	python Symmetry_Plot_Z_Depth.py ../Data/CS.txt
 
+C2V:
+	python Symmetry_Plot_Y_Depth.py ../Data/C2V.txt
+
+C2H:
+	python Symmetry_Plot_Z_Depth.py ../Data/C2H.txt
+
 clean:
 	rm ../Figures/*.png
