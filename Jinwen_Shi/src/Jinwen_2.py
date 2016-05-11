@@ -4,51 +4,24 @@
 
 from pylab import *
 
-filename = "../Data/data_1.txt"
+filename = "../Data/data_2.txt"
 
 X = []
 Y = []
 
 lines = open(filename, "r").readlines()
 
-X = [line.strip().split("\t")[2] for line in lines[2:]]
-Y = [line.strip().split("\t")[6] for line in lines[2:]]
-name = [line.strip().split("\t")[0] for line in lines[2:]]
+X = [line.strip().split("\t")[2] for line in lines]
+Y = [line.strip().split("\t")[6] for line in lines]
+name = [line.strip().split("\t")[0] for line in lines]
 
 X_1 = []
 Y_1 = []
 name_1 = []
 
 # List of Targeted Genes
-nameList = ["Rn18s",
-            "Zbtb20",
-            "Aip",
-            "Gnai2",
-            "Gstt2",
-            "Atf4",
-            "Actb",
-            "Ppp2r4",
-            "Hip1r",
-            "Blvrb",
-            "Oxa1l",
-            "Psmd11",
-            "Smc4",
-            "Srebf2",
-            "Trpc4ap",
-            "Hnrpdl",
-            "Gng10",
-            "Itpr3",
-            "Sfpi1",
-            "Itm2b",
-            "Mrpl49",
-            "Top1",
-            "A430107D22Rik",
-            "Letm1",
-            "Mtdh",
-            "Tbrg1",
-            "Bcl6",
-            "Clptm1l",
-            "Gtf2i"]
+nameList = ["Cd38", "Ly6d", "S1pr1", "Klf2", "Ccr7", "Klf3", "Sell", "Il9r",
+"Zbtb32", "Zfp238", "Ccr6", "Bcl6"]
 
 # Remove NA of Y
 for i in range(len(X)):
@@ -56,6 +29,11 @@ for i in range(len(X)):
         X_1.append(X[i])
         Y_1.append(Y[i])
         name_1.append(name[i])
+
+# Remove the title
+X_1.pop(0);
+Y_1.pop(0);
+name_1.pop(0);
 
 # Wash the data
 X_1 = [float(x) for x in X_1]
@@ -85,11 +63,11 @@ for index in geneIndex:
              textcoords = "offset points",
              fontsize = fontSize)
 
-xlim(-2, 2)
-ylim(0, 5)
+xlim(-5, 5)
+ylim(0, 50)
 
 xlabel(r"$\mathrm{log}_2\mathrm{FC}$")
 ylabel(r"$-\mathrm{log}_{10} \mathrm{(p\ value)}$")
 
 # Save the figure
-savefig("../Figures/Shijinwn_Seq_Plot.png", dpi = 200)
+savefig("../Figures/Jinwe_2.png", dpi = 200)
