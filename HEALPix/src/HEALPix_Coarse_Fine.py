@@ -6,7 +6,7 @@ from mpl_toolkits.mplot3d import *
 
 filename = "../Data/HEALPix_Grid.txt"
 
-lines = open(filename, "r").readlines();
+lines = open(filename, "r").readlines()
 
 x = [float(line.strip().split(" ")[0]) for line in lines]
 y = [float(line.strip().split(" ")[1]) for line in lines]

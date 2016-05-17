@@ -68,15 +68,15 @@ scatter(X_1,
 
 fontSize = 20
 
-for index in geneIndex:
-    annotate(name_1[index],
-             xy = (X_1[index], Y_1[index]),
-             xycoords = "data",
-             xytext = (-100, 0),
-             textcoords = "offset points",
-             bbox = dict(boxstyle = "round", fc = "0.8"),
-             arrowprops = dict(arrowstyle="->", linewidth = 2),
-             fontsize = fontSize)
+# for index in geneIndex:
+#    annotate(name_1[index],
+#             xy = (X_1[index], Y_1[index]),
+#             xycoords = "data",
+#             xytext = (-100, 0),
+#             textcoords = "offset points",
+#             bbox = dict(boxstyle = "round", fc = "0.8"),
+#             arrowprops = dict(arrowstyle="->", linewidth = 2),
+#             fontsize = fontSize)
 
 xlim(-6, 6)
 ylim(0, 50)
@@ -91,4 +91,5 @@ ylabel(r"$-\mathrm{log}_{10} \mathrm{(p\ value)}$", fontsize = 50)
 [i.set_linewidth(2) for i in gca().spines.itervalues()]
 
 # Save the figure
-savefig("../Figures/Jinwe_2.png", dpi = 300)
+savefig("../Figures/Jinwen_2.png", dpi = 300)
+savefig("../Figures/Jinwen_2.pdf", dpi = 300)
