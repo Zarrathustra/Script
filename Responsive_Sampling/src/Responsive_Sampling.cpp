@@ -8,8 +8,11 @@
 #include <gsl/gsl_cdf.h>
 #include <gsl/gsl_randist.h>
 
+#include "DirectionalStat.h"
+
 #define CONF_ALPHA 0.05
 //#define CONF_ALPHA 0.5
+#define LF 1000
 
 using namespace std;
 
@@ -29,11 +32,14 @@ double Gaussian3DConfidenceArea(const double s0,
 /**
  * Confidence Area Size of ACG.
  * Note: ACG is an axial distribution. Thus, this function returns the size of one modal.
+ * lf : loose factor
  */
 double ACG4DConfidenceArea(const double k0,
-                           const double k1)
+                           const double k1,
+                           const double lf)
 {
-    double k = k1 / k0;
+    double k = k1 / k0 * lf;
+    //double k = k1 / k0 * 1000;
 
     return Gaussian3DConfidenceArea(k, k, k);
 }
@@ -73,8 +79,9 @@ int main()
         W.push_back(tmp[6]);
     }
 
-    /***
     int n = xTrans.size();
+
+    /***
     for (int i = 0; i < n; i++)
     {
         printf("%10f %10f %10f %10f %10f %10f %10f\n",
@@ -100,7 +107,27 @@ int main()
            Gaussian2DConfidenceArea(s0, s1));
 
     printf("Sampling Points of Translation: %d\n",
-           (int)(2 * 2 / Gaussian2DConfidenceArea(s0, s1)) + 1);
+           (int)(2 * 2 / Gaussian2DConfidenceArea(s0, s1)));
+
+    mat4 m(n, 4);
+    for (int i = 0; i < n; i++)
+    {
+        m(i, 0) = w[i];
+        m(i, 1) = x[i];
+        m(i, 2) = y[i];
+        m(i, 3) = z[i];
+    }
+
+    double k0, k1;
+    inferACG(k0, k1, m);
+
+    printf("k0 = %10f, k1 = %10f\n", k0, k1);
+
+    printf("Confidence Area of Rotation: %.15f\n",
+           ACG4DConfidenceArea(k0, k1, LF));
+
+    printf("Sampling Points of Rotation: %12f\n",
+           (2 * M_PI / ACG4DConfidenceArea(k0, k1, LF)));
 
     return 0;
 }
