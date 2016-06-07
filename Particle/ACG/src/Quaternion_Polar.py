@@ -50,8 +50,6 @@ yticks([0, pi / 4, pi / 2, pi / 4 * 3, pi],
         r"$\frac{3\pi}{4}$",
         r"$\pi$"])
 
-title(sys.argv[2])
-
 basename = os.path.basename(filename)
 basename = os.path.splitext(basename)[0]
 
