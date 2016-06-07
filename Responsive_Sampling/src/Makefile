@@ -1,13 +1,20 @@
 CXX = g++
-CXXFLAGS = -std=c++11 -lgsl
+CXXFLAGS = -std=c++11 -lgsl -I ./Eigen3 -Wno-deprecated-declarations  
 
-SRCS = $(wildcard *.cpp)  
-EXES = $(patsubst %cpp, %exe, $(SRCS))  
+all : Responsive_Sampling.exe
 
-all : ${EXES}
-
-%.exe : %.cpp
+Responsive_Sampling.exe : Responsive_Sampling.o DirectionalStat.o Random.o
 	${CXX} ${CXXFLAGS} $< -o $@
 
+Responsive_Sampling.o : Responsive_Sampling.cpp DirectionalStat.h
+	${CXX} ${CXXFLAGS} -c $< -o $@
+
+DirectionalStat.o : DirectionalStat.cpp DirectionalStat.h Random.h Typedef.h
+	${CXX} ${CXXFLAGS} -c $< -o $@
+
+Random.o : Random.cpp
+	${CXX} ${CXXFLAGS} -c $< -o $@
+
 clean :
+	rm -rf *.o
 	rm -rf *.exe

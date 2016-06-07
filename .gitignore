@@ -3,4 +3,6 @@
 *.jpg
 *.jpeg
 *.back
+*.o
+*.exe
 *~

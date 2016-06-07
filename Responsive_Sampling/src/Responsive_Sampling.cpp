@@ -9,15 +9,34 @@
 #include <gsl/gsl_randist.h>
 
 #define CONF_ALPHA 0.05
+//#define CONF_ALPHA 0.5
 
 using namespace std;
 
 double Gaussian2DConfidenceArea(const double s0,
                                 const double s1)
 {
-    //return s0 * s1;
     return 2 * M_PI * s0 * s1 * gsl_cdf_chisq_Qinv(CONF_ALPHA, 2);
 };
+
+double Gaussian3DConfidenceArea(const double s0,
+                                const double s1,
+                                const double s2)
+{
+    return 4 * M_PI * s0 * s1 * s2 * gsl_cdf_chisq_Qinv(CONF_ALPHA, 3);
+}
+
+/**
+ * Confidence Area Size of ACG.
+ * Note: ACG is an axial distribution. Thus, this function returns the size of one modal.
+ */
+double ACG4DConfidenceArea(const double k0,
+                           const double k1)
+{
+    double k = k1 / k0;
+
+    return Gaussian3DConfidenceArea(k, k, k);
+}
 
 int main()
 {
@@ -79,6 +98,9 @@ int main()
 
     printf("Confidence Area of Translation: %10f\n",
            Gaussian2DConfidenceArea(s0, s1));
+
+    printf("Sampling Points of Translation: %d\n",
+           (int)(2 * 2 / Gaussian2DConfidenceArea(s0, s1)) + 1);
 
     return 0;
 }
