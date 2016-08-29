@@ -1,0 +1,285 @@
+../Data/2016-06-16_02/Particle_0001_Round_000_Final.par
+k0 =   8.381768, k1 =   0.009488
+Confidence Area of Rotation: 0.000935064635048
+Sampling Points of Rotation:  6719.519776
+Sqrt of Sampling Points of Rotation:    81.972677
+../Data/2016-06-16_02/Particle_0001_Round_001_Final.par
+k0 =   7.547149, k1 =   0.000137
+Confidence Area of Rotation: 0.000001895442465
+Sampling Points of Rotation: 3314891.073219
+Sqrt of Sampling Points of Rotation:  1820.684232
+../Data/2016-06-16_02/Particle_0001_Round_002_Final.par
+k0 =   4.778181, k1 =   0.000192
+Confidence Area of Rotation: 0.000006257855343
+Sampling Points of Rotation: 1004047.706886
+Sqrt of Sampling Points of Rotation:  1002.021810
+../Data/2016-06-16_02/Particle_0002_Round_000_Final.par
+k0 =   7.805328, k1 =   0.000089
+Confidence Area of Rotation: 0.000000950329620
+Sampling Points of Rotation: 6611585.256655
+Sqrt of Sampling Points of Rotation:  2571.300305
+../Data/2016-06-16_02/Particle_0002_Round_001_Final.par
+k0 =  13.081483, k1 =   0.000056
+Confidence Area of Rotation: 0.000000218030316
+Sampling Points of Rotation: 28817943.401961
+Sqrt of Sampling Points of Rotation:  5368.234663
+../Data/2016-06-16_02/Particle_0002_Round_002_Final.par
+k0 =  14.053272, k1 =   0.000071
+Confidence Area of Rotation: 0.000000280190098
+Sampling Points of Rotation: 22424722.886916
+Sqrt of Sampling Points of Rotation:  4735.474938
+../Data/2016-06-16_02/Particle_0003_Round_000_Final.par
+k0 =   6.885414, k1 =   0.000125
+Confidence Area of Rotation: 0.000001888134343
+Sampling Points of Rotation: 3327721.531405
+Sqrt of Sampling Points of Rotation:  1824.204356
+../Data/2016-06-16_02/Particle_0003_Round_001_Final.par
+k0 =   5.536550, k1 =   0.000089
+Confidence Area of Rotation: 0.000001584936263
+Sampling Points of Rotation: 3964314.182502
+Sqrt of Sampling Points of Rotation:  1991.058558
+../Data/2016-06-16_02/Particle_0003_Round_002_Final.par
+k0 =   5.987275, k1 =   0.000068
+Confidence Area of Rotation: 0.000000936248295
+Sampling Points of Rotation: 6711024.563303
+Sqrt of Sampling Points of Rotation:  2590.564526
+../Data/2016-06-16_02/Particle_0004_Round_000_Final.par
+k0 =   5.560127, k1 =   0.000478
+Confidence Area of Rotation: 0.000019581136266
+Sampling Points of Rotation: 320879.504732
+Sqrt of Sampling Points of Rotation:   566.462271
+../Data/2016-06-16_02/Particle_0004_Round_001_Final.par
+k0 =   7.345474, k1 =   0.000170
+Confidence Area of Rotation: 0.000002739817785
+Sampling Points of Rotation: 2293285.831495
+Sqrt of Sampling Points of Rotation:  1514.359875
+../Data/2016-06-16_02/Particle_0004_Round_002_Final.par
+k0 =   2.906818, k1 =   0.000018
+Confidence Area of Rotation: 0.000000383616495
+Sampling Points of Rotation: 16378819.458180
+Sqrt of Sampling Points of Rotation:  4047.075420
+../Data/2016-06-16_02/Particle_0005_Round_000_Final.par
+k0 =   6.635048, k1 =   0.000057
+Confidence Area of Rotation: 0.000000612145398
+Sampling Points of Rotation: 10264204.104312
+Sqrt of Sampling Points of Rotation:  3203.779659
+../Data/2016-06-16_02/Particle_0005_Round_001_Final.par
+k0 =   5.042576, k1 =   0.000057
+Confidence Area of Rotation: 0.000000921736220
+Sampling Points of Rotation: 6816684.831361
+Sqrt of Sampling Points of Rotation:  2610.878172
+../Data/2016-06-16_02/Particle_0005_Round_002_Final.par
+k0 =   4.296354, k1 =   0.000131
+Confidence Area of Rotation: 0.000004131596010
+Sampling Points of Rotation: 1520764.685752
+Sqrt of Sampling Points of Rotation:  1233.192883
+../Data/2016-06-16_02/Particle_0006_Round_000_Final.par
+k0 =  11.280835, k1 =   0.000111
+Confidence Area of Rotation: 0.000000762132087
+Sampling Points of Rotation: 8244220.939172
+Sqrt of Sampling Points of Rotation:  2871.275142
+../Data/2016-06-16_02/Particle_0006_Round_001_Final.par
+k0 =  12.607494, k1 =   0.000134
+Confidence Area of Rotation: 0.000000847783989
+Sampling Points of Rotation: 7411304.517358
+Sqrt of Sampling Points of Rotation:  2722.371120
+../Data/2016-06-16_02/Particle_0006_Round_002_Final.par
+k0 =  20.294119, k1 =   0.000208
+Confidence Area of Rotation: 0.000000806512051
+Sampling Points of Rotation: 7790565.931117
+Sqrt of Sampling Points of Rotation:  2791.158528
+../Data/2016-06-16_02/Particle_0007_Round_000_Final.par
+k0 =  33.720403, k1 =   0.000124
+Confidence Area of Rotation: 0.000000173939451
+Sampling Points of Rotation: 36122830.584766
+Sqrt of Sampling Points of Rotation:  6010.227166
+../Data/2016-06-16_02/Particle_0007_Round_001_Final.par
+k0 =  29.343448, k1 =   0.000060
+Confidence Area of Rotation: 0.000000071412246
+Sampling Points of Rotation: 87984703.450068
+Sqrt of Sampling Points of Rotation:  9380.016175
+../Data/2016-06-16_02/Particle_0007_Round_002_Final.par
+k0 =  21.710240, k1 =   0.000055
+Confidence Area of Rotation: 0.000000098818048
+Sampling Points of Rotation: 63583378.345547
+Sqrt of Sampling Points of Rotation:  7973.918632
+../Data/2016-06-16_02/Particle_0008_Round_000_Final.par
+k0 =  10.625825, k1 =   0.000061
+Confidence Area of Rotation: 0.000000337195664
+Sampling Points of Rotation: 18633647.970896
+Sqrt of Sampling Points of Rotation:  4316.670936
+../Data/2016-06-16_02/Particle_0008_Round_001_Final.par
+k0 =  13.422960, k1 =   0.000059
+Confidence Area of Rotation: 0.000000223571637
+Sampling Points of Rotation: 28103678.010426
+Sqrt of Sampling Points of Rotation:  5301.290221
+../Data/2016-06-16_02/Particle_0008_Round_002_Final.par
+k0 =  11.216657, k1 =   0.000115
+Confidence Area of Rotation: 0.000000808921117
+Sampling Points of Rotation: 7767364.669402
+Sqrt of Sampling Points of Rotation:  2786.999223
+../Data/2016-06-16_02/Particle_0009_Round_000_Final.par
+k0 =   5.087419, k1 =   0.000172
+Confidence Area of Rotation: 0.000004818001566
+Sampling Points of Rotation: 1304106.115665
+Sqrt of Sampling Points of Rotation:  1141.974656
+../Data/2016-06-16_02/Particle_0009_Round_001_Final.par
+k0 =   6.969499, k1 =   0.000689
+Confidence Area of Rotation: 0.000024139295098
+Sampling Points of Rotation: 260288.682066
+Sqrt of Sampling Points of Rotation:   510.184949
+../Data/2016-06-16_02/Particle_0009_Round_002_Final.par
+k0 =   3.167785, k1 =   0.000162
+Confidence Area of Rotation: 0.000009009654388
+Sampling Points of Rotation: 697383.610574
+Sqrt of Sampling Points of Rotation:   835.094971
+../Data/2016-06-16_02/Particle_0010_Round_000_Final.par
+k0 =  10.968235, k1 =   0.001773
+Confidence Area of Rotation: 0.000050466836575
+Sampling Points of Rotation: 124501.271202
+Sqrt of Sampling Points of Rotation:   352.847377
+../Data/2016-06-16_02/Particle_0010_Round_001_Final.par
+k0 =   7.450094, k1 =   0.009269
+Confidence Area of Rotation: 0.001077338843027
+Sampling Points of Rotation:  5832.134753
+Sqrt of Sampling Points of Rotation:    76.368415
+../Data/2016-06-16_02/Particle_0010_Round_002_Final.par
+k0 =   7.798664, k1 =   0.000067
+Confidence Area of Rotation: 0.000000620306048
+Sampling Points of Rotation: 10129169.826940
+Sqrt of Sampling Points of Rotation:  3182.635673
+../Data/2016-06-16_02/Particle_0011_Round_000_Final.par
+k0 =  11.640855, k1 =   0.000226
+Confidence Area of Rotation: 0.000002094187667
+Sampling Points of Rotation: 3000297.158910
+Sqrt of Sampling Points of Rotation:  1732.136588
+../Data/2016-06-16_02/Particle_0011_Round_001_Final.par
+k0 =  14.347054, k1 =   0.000072
+Confidence Area of Rotation: 0.000000278619113
+Sampling Points of Rotation: 22551164.003857
+Sqrt of Sampling Points of Rotation:  4748.806587
+../Data/2016-06-16_02/Particle_0011_Round_002_Final.par
+k0 =  14.376326, k1 =   0.000099
+Confidence Area of Rotation: 0.000000441259085
+Sampling Points of Rotation: 14239220.264957
+Sqrt of Sampling Points of Rotation:  3773.489137
+../Data/2016-06-16_02/Particle_0012_Round_000_Final.par
+k0 =  21.264682, k1 =   0.000040
+Confidence Area of Rotation: 0.000000062488408
+Sampling Points of Rotation: 100549613.874625
+Sqrt of Sampling Points of Rotation: 10027.443038
+../Data/2016-06-16_02/Particle_0012_Round_001_Final.par
+k0 =  20.759707, k1 =   0.000054
+Confidence Area of Rotation: 0.000000103349386
+Sampling Points of Rotation: 60795574.624973
+Sqrt of Sampling Points of Rotation:  7797.151699
+../Data/2016-06-16_02/Particle_0012_Round_002_Final.par
+k0 =  23.063296, k1 =   0.000046
+Confidence Area of Rotation: 0.000000069858905
+Sampling Points of Rotation: 89941079.431126
+Sqrt of Sampling Points of Rotation:  9483.727085
+../Data/2016-06-16_02/Particle_0013_Round_000_Final.par
+k0 =  22.280332, k1 =   0.000141
+Confidence Area of Rotation: 0.000000392435167
+Sampling Points of Rotation: 16010760.081568
+Sqrt of Sampling Points of Rotation:  4001.344784
+../Data/2016-06-16_02/Particle_0013_Round_001_Final.par
+k0 =  17.385661, k1 =   0.000045
+Confidence Area of Rotation: 0.000000100895571
+Sampling Points of Rotation: 62274143.830904
+Sqrt of Sampling Points of Rotation:  7891.396824
+../Data/2016-06-16_02/Particle_0013_Round_002_Final.par
+k0 =  25.218386, k1 =   0.000083
+Confidence Area of Rotation: 0.000000147666318
+Sampling Points of Rotation: 42549887.985348
+Sqrt of Sampling Points of Rotation:  6523.027517
+../Data/2016-06-16_02/Particle_0014_Round_000_Final.par
+k0 =  11.516839, k1 =   0.000082
+Confidence Area of Rotation: 0.000000464291524
+Sampling Points of Rotation: 13532845.170091
+Sqrt of Sampling Points of Rotation:  3678.701560
+../Data/2016-06-16_02/Particle_0014_Round_001_Final.par
+k0 =  11.755891, k1 =   0.000042
+Confidence Area of Rotation: 0.000000165444503
+Sampling Points of Rotation: 37977600.836298
+Sqrt of Sampling Points of Rotation:  6162.596923
+../Data/2016-06-16_02/Particle_0014_Round_002_Final.par
+k0 =  11.166607, k1 =   0.000088
+Confidence Area of Rotation: 0.000000542078535
+Sampling Points of Rotation: 11590913.313635
+Sqrt of Sampling Points of Rotation:  3404.543040
+../Data/2016-06-16_02/Particle_0015_Round_000_Final.par
+k0 =   1.465517, k1 =   0.000030
+Confidence Area of Rotation: 0.000002261314515
+Sampling Points of Rotation: 2778554.360948
+Sqrt of Sampling Points of Rotation:  1666.899625
+../Data/2016-06-16_02/Particle_0015_Round_001_Final.par
+k0 =   1.407976, k1 =   0.000015
+Confidence Area of Rotation: 0.000000818131408
+Sampling Points of Rotation: 7679921.883381
+Sqrt of Sampling Points of Rotation:  2771.267198
+../Data/2016-06-16_02/Particle_0015_Round_002_Final.par
+k0 =   1.936072, k1 =   0.000081
+Confidence Area of Rotation: 0.000006614652831
+Sampling Points of Rotation: 949888.900785
+Sqrt of Sampling Points of Rotation:   974.622440
+../Data/2016-06-16_02/Particle_0016_Round_000_Final.par
+k0 =   5.084575, k1 =   0.000096
+Confidence Area of Rotation: 0.000002026282332
+Sampling Points of Rotation: 3100843.948035
+Sqrt of Sampling Points of Rotation:  1760.921335
+../Data/2016-06-16_02/Particle_0016_Round_001_Final.par
+k0 =  18.756877, k1 =   0.000092
+Confidence Area of Rotation: 0.000000268585577
+Sampling Points of Rotation: 23393606.512200
+Sqrt of Sampling Points of Rotation:  4836.693758
+../Data/2016-06-16_02/Particle_0016_Round_002_Final.par
+k0 =   9.122976, k1 =   0.000180
+Confidence Area of Rotation: 0.000002148109143
+Sampling Points of Rotation: 2924984.201253
+Sqrt of Sampling Points of Rotation:  1710.258519
+../Data/2016-06-16_02/Particle_0017_Round_000_Final.par
+k0 =   6.278417, k1 =   0.002315
+Confidence Area of Rotation: 0.000173841236983
+Sampling Points of Rotation: 36143.238602
+Sqrt of Sampling Points of Rotation:   190.113752
+../Data/2016-06-16_02/Particle_0017_Round_001_Final.par
+k0 =   5.110656, k1 =   0.000009
+Confidence Area of Rotation: 0.000000059269477
+Sampling Points of Rotation: 106010473.096000
+Sqrt of Sampling Points of Rotation: 10296.138747
+../Data/2016-06-16_02/Particle_0017_Round_002_Final.par
+k0 =   5.703525, k1 =   0.000613
+Confidence Area of Rotation: 0.000027325573234
+Sampling Points of Rotation: 229937.913957
+Sqrt of Sampling Points of Rotation:   479.518419
+../Data/2016-06-16_02/Particle_0018_Round_000_Final.par
+k0 =   4.707614, k1 =   0.000080
+Confidence Area of Rotation: 0.000001718499272
+Sampling Points of Rotation: 3656204.811068
+Sqrt of Sampling Points of Rotation:  1912.120501
+../Data/2016-06-16_02/Particle_0018_Round_001_Final.par
+k0 =   4.220712, k1 =   0.000068
+Confidence Area of Rotation: 0.000001577281458
+Sampling Points of Rotation: 3983553.648791
+Sqrt of Sampling Points of Rotation:  1995.884177
+../Data/2016-06-16_02/Particle_0018_Round_002_Final.par
+k0 =   5.644639, k1 =   0.000232
+Confidence Area of Rotation: 0.000006467428346
+Sampling Points of Rotation: 971512.163811
+Sqrt of Sampling Points of Rotation:   985.653166
+../Data/2016-06-16_02/Particle_0019_Round_000_Final.par
+k0 =   7.921405, k1 =   0.000541
+Confidence Area of Rotation: 0.000013845871364
+Sampling Points of Rotation: 453794.863612
+Sqrt of Sampling Points of Rotation:   673.642979
+../Data/2016-06-16_02/Particle_0019_Round_001_Final.par
+k0 =   7.762285, k1 =   0.000044
+Confidence Area of Rotation: 0.000000328872540
+Sampling Points of Rotation: 19105229.365356
+Sqrt of Sampling Points of Rotation:  4370.952913
+../Data/2016-06-16_02/Particle_0019_Round_002_Final.par
+k0 =   9.193786, k1 =   0.000061
+Confidence Area of Rotation: 0.000000422572944
+Sampling Points of Rotation: 14868877.432556
+Sqrt of Sampling Points of Rotation:  3856.018339

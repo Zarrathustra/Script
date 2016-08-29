@@ -20,7 +20,7 @@ def angle(w, x, y, z):
 
 filename = sys.argv[1]
 
-lines = open(filename, "r").readlines();
+lines = open(filename, "r").readlines()
 
 W = [float(line.strip().split()[0]) for line in lines]
 X = [float(line.strip().split()[1]) for line in lines]

@@ -11,42 +11,35 @@
 #include "DirectionalStat.h"
 
 #define CONF_ALPHA 0.05
-//#define CONF_ALPHA 0.5
-#define LF 1000
 
 using namespace std;
 
 double Gaussian2DConfidenceArea(const double s0,
                                 const double s1)
 {
-    return 2 * M_PI * s0 * s1 * gsl_cdf_chisq_Qinv(CONF_ALPHA, 2);
+    return M_PI * s0 * s1 * gsl_cdf_chisq_Qinv(CONF_ALPHA, 2);
 };
 
 double Gaussian3DConfidenceArea(const double s0,
                                 const double s1,
                                 const double s2)
 {
-    return 4 * M_PI * s0 * s1 * s2 * gsl_cdf_chisq_Qinv(CONF_ALPHA, 3);
-}
+    return M_PI * s0 * s1 * s2 * gsl_cdf_chisq_Qinv(CONF_ALPHA, 3);
+};
 
 /**
  * Confidence Area Size of ACG.
  * Note: ACG is an axial distribution. Thus, this function returns the size of one modal.
  * lf : loose factor
  */
-double ACG4DConfidenceArea(const double k0,
-                           const double k1,
-                           const double lf)
+double ACG4DConfidenceArea(const double rVari)
 {
-    double k = k1 / k0 * lf;
-    //double k = k1 / k0 * 1000;
+    return Gaussian3DConfidenceArea(1.0 / rVari, 1.0 / rVari, 1.0 / rVari);
+};
 
-    return Gaussian3DConfidenceArea(k, k, k);
-}
-
-int main()
+int main(int argc, char* argv[])
 {
-    ifstream file = ifstream("../Data/Particle_Sample.par");
+    ifstream file = ifstream(argv[1]);
 
     vector<double> xTrans;
     vector<double> yTrans;
@@ -95,6 +88,7 @@ int main()
     }
     ***/
 
+    /***
     double s0 = gsl_stats_sd(&xTrans[0], 1, xTrans.size());
     double s1 = gsl_stats_sd(&yTrans[0], 1, yTrans.size());
 
@@ -108,6 +102,7 @@ int main()
 
     printf("Sampling Points of Translation: %d\n",
            (int)(2 * 2 / Gaussian2DConfidenceArea(s0, s1)));
+    ***/
 
     mat4 m(n, 4);
     for (int i = 0; i < n; i++)
@@ -124,10 +119,13 @@ int main()
     printf("k0 = %10f, k1 = %10f\n", k0, k1);
 
     printf("Confidence Area of Rotation: %.15f\n",
-           ACG4DConfidenceArea(k0, k1, LF));
+           ACG4DConfidenceArea(sqrt(k0 / k1)));
 
     printf("Sampling Points of Rotation: %12f\n",
-           (2 * M_PI / ACG4DConfidenceArea(k0, k1, LF)));
+           (2 * M_PI / ACG4DConfidenceArea(sqrt(k0 / k1))));
+
+    printf("Sqrt of Sampling Points of Rotation: %12f\n",
+           sqrt((2 * M_PI / ACG4DConfidenceArea(sqrt(k0 / k1)))));
 
     return 0;
 }
