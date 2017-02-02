@@ -41,13 +41,16 @@ scatter(6 * cos(VMS_5), 6 * sin(VMS_5), \
         linewidth = 0, alpha = 0.1, \
         label = "$\kappa = 8$")
 scatter(7 * cos(VMS_6), 7 * sin(VMS_6), \
-        color = "orange", \
+        color = "brown", \
         linewidth = 0, alpha = 0.1, \
         label = "$\kappa = 16$")
 scatter(8 * cos(VMS_7), 8 * sin(VMS_7), \
         color = "black", \
         linewidth = 0, alpha = 0.1, \
         label = "$\kappa = 32$")
+
+xlim([-10, 10])
+ylim([-10, 10])
 
 legend()
 
