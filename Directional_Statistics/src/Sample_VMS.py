@@ -51,6 +51,10 @@ scatter(8 * cos(VMS_7), 8 * sin(VMS_7), \
 
 legend()
 
+axis("off")
+
+title("Simulation Using Best & Fisher's Method for von Mises Distribution")
+
 basename = os.path.basename(filename)
 basename = os.path.splitext(basename)[0]
 

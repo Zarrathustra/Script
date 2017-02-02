@@ -8,7 +8,7 @@ after_perturb : 4D_ACG_Resample_After_Perturb_0.05_Polar.png 4D_ACG_Resample_Aft
 
 standard : 4D_ACG_I.png 4D_ACG_5_1.png 4D_ACG_25_1.png 4D_ACG_125_1.png 4D_ACG_I_Polar.png 4D_ACG_5_1_Polar.png 4D_ACG_25_1_Polar.png 4D_ACG_125_1_Polar.png
 
-VMS : PDF_VMS.png
+VMS : PDF_VMS.png Sample_VMS.png
 
 4D_ACG_I.png : Quaternion.py ../Data/4D_ACG_I.txt
 	python $^ "Distribition with Matrix [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]"
@@ -71,4 +71,7 @@ VMS : PDF_VMS.png
 	python $^ "90% Global, 10% Single Point, After Perturbation"
 
 PDF_VMS.png : PDF_VMS.py ../Data/PDF_VMS.txt
+	python $^
+
+Sample_VMS.png : Sample_VMS.py ../Data/Sample_VMS.txt
 	python $^
