@@ -1,4 +1,4 @@
-all : standard before_perturb perturb after_perturb
+all : standard before_perturb perturb after_perturb VMS
 
 before_perturb : 4D_ACG_Resample_Before_Perturb_Polar.png
 
@@ -7,6 +7,8 @@ perturb : 4D_ACG_Resample_Perturb_0.05_Polar.png 4D_ACG_Resample_Perturb_0.1_Pol
 after_perturb : 4D_ACG_Resample_After_Perturb_0.05_Polar.png 4D_ACG_Resample_After_Perturb_0.5_Polar.png 4D_ACG_Resample_After_Perturb_0.7_Polar.png 4D_ACG_Resample_After_Perturb_0.75_Polar.png 4D_ACG_Resample_After_Perturb_0.8_Polar.png 4D_ACG_Resample_After_Perturb_0.9_Polar.png
 
 standard : 4D_ACG_I.png 4D_ACG_5_1.png 4D_ACG_25_1.png 4D_ACG_125_1.png 4D_ACG_I_Polar.png 4D_ACG_5_1_Polar.png 4D_ACG_25_1_Polar.png 4D_ACG_125_1_Polar.png
+
+VMS : PDF_VMS.png
 
 4D_ACG_I.png : Quaternion.py ../Data/4D_ACG_I.txt
 	python $^ "Distribition with Matrix [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]"
@@ -67,3 +69,6 @@ standard : 4D_ACG_I.png 4D_ACG_5_1.png 4D_ACG_25_1.png 4D_ACG_125_1.png 4D_ACG_I
 
 4D_ACG_Resample_After_Perturb_0.9_Polar.png : Quaternion_Polar.py ../Data/4D_ACG_Resample_After_Perturb_0.9.txt
 	python $^ "90% Global, 10% Single Point, After Perturbation"
+
+PDF_VMS.png : PDF_VMS.py ../Data/PDF_VMS.txt
+	python $^
