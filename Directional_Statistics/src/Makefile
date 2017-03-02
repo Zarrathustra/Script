@@ -1,4 +1,4 @@
-all : standard before_perturb perturb after_perturb VMS
+all : standard before_perturb perturb after_perturb VMS new
 
 before_perturb : 4D_ACG_Resample_Before_Perturb_Polar.png
 
@@ -7,6 +7,11 @@ perturb : 4D_ACG_Resample_Perturb_0.05_Polar.png 4D_ACG_Resample_Perturb_0.1_Pol
 after_perturb : 4D_ACG_Resample_After_Perturb_0.05_Polar.png 4D_ACG_Resample_After_Perturb_0.5_Polar.png 4D_ACG_Resample_After_Perturb_0.7_Polar.png 4D_ACG_Resample_After_Perturb_0.75_Polar.png 4D_ACG_Resample_After_Perturb_0.8_Polar.png 4D_ACG_Resample_After_Perturb_0.9_Polar.png
 
 standard : 4D_ACG_I.png 4D_ACG_5_1.png 4D_ACG_25_1.png 4D_ACG_125_1.png 4D_ACG_I_Polar.png 4D_ACG_5_1_Polar.png 4D_ACG_25_1_Polar.png 4D_ACG_125_1_Polar.png
+
+new : ACG_1_5_5_5.png
+
+ACG_1_5_5_5.png : Quaternion_Polar.py ../Data/ACG_1_5_5_5.txt
+	python $^ "Distribition with Matrix [[1, 0, 0, 0], [0, 5, 0, 0], [0, 0, 5, 0], [0, 0, 0, 5]]"
 
 VMS : PDF_VMS.png Sample_VMS.png Sample_VMS_Unit_Vector.png
 
