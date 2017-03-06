@@ -5,7 +5,20 @@ all : ../Figures/CTF_Refine_2017-02-28_06.png \
 	  ../Figures/CTF_Refine_2017-02-28_10.png \
 	  ../Figures/CTF_Refine_2017-03-01_01.png \
 	  ../Figures/CTF_Refine_2017-03-02_02.png \
-      ../Figures/Comparison_2017-03-02_02_VS_2017-02-26_04.png
+      ../Figures/Comparison_2017-03-02_02_VS_2017-02-26_04.png \
+	  ../Figures/CTF_Refine_2017-03-02_12.png \
+	  ../Figures/Particle_Grading_Compare_2017-03-02_11_12.png \
+	  ../Figures/CTF_Refine_2017-03-03_02.png \
+      ../Figures/CTF_Refine_2017-03-02_09_VS_2017-03-03_02.png \
+	  ../Figures/CTF_Refine_2017-03-04_10.png \
+      ../Figures/CTF_Refine_2017-03-05_01.png \
+	  ../Figures/CTF_Refine_2017-03-05_06_VS_2017-03-05_07.png \
+	  ../Figures/Particle_Grading_Compare_2017-03-05_08_09.png \
+	  ../Figures/Compare_RELION_2017-03-06_02.png \
+	  ../Figures/Compare_RELION_2017-03-06_04.png \
+	  ../Figures/Compare_RELION_Unmasked_2017-03-06_04.png \
+	  ../Figures/Compare_RELION_Unmasked_2017-03-06_06.png \
+	  ../Figures/Particle_Grading_Unmasked_2017-03-06_06_08.png
 
 ../Figures/CTF_Refine_2017-02-28_06.png : FSC_Compare.py \
 	                                      ../Data/CTF_Refine_000_2017-02-28_06.txt \
@@ -78,3 +91,115 @@ all : ../Figures/CTF_Refine_2017-02-28_06.png \
 	python $^ $@ "With Particle Grading & CTF Refine" \
 		         "Without Particle Grading & CTF Refine" \
 				 "Comparison Between Particle Grading & CTF Refine or Not"
+
+../Figures/CTF_Refine_2017-03-02_12.png : FSC_Compare_4.py \
+	                                      ../Data/CTF_Refine_000_2017-03-02_12.txt \
+	                                      ../Data/CTF_Refine_001_2017-03-02_12.txt \
+	                                      ../Data/CTF_Refine_002_2017-03-02_12.txt \
+	                                      ../Data/CTF_Refine_003_2017-03-02_12.txt
+	python $^ $@ "Comparison Between CTF Refine or Not" \
+		         "Before CTF Refine" \
+				 "CTF Refine Round 1" \
+				 "CTF Refine Round 2" \
+				 "CTF Refine Round 3"
+
+../Figures/Particle_Grading_Compare_2017-03-02_11_12.png : FSC_Compare.py \
+	                                                       ../Data/FSC_Final_2017-03-02_11.txt \
+	                                                       ../Data/FSC_Final_2017-03-02_12.txt
+	python $^ $@ "Without CTF Refine" \
+		         "With CTF Refine" \
+				 "Comparsion Between CTF Refine or Not"
+
+../Figures/CTF_Refine_2017-03-03_02.png : FSC_Compare_4.py \
+	                                      ../Data/CTF_Refine_000_2017-03-02_02.txt \
+	                                      ../Data/CTF_Refine_001_2017-03-02_02.txt \
+	                                      ../Data/CTF_Refine_002_2017-03-02_02.txt \
+	                                      ../Data/CTF_Refine_003_2017-03-02_02.txt
+	python $^ $@ "Comparison Between CTF Refine or Not" \
+		         "Before CTF Refine" \
+				 "CTF Refine Round 1" \
+				 "CTF Refine Round 2" \
+				 "CTF Refine Round 3"
+
+../Figures/CTF_Refine_2017-03-02_09_VS_2017-03-03_02.png : FSC_Compare.py \
+	                                                       ../Data/FSC_Final_2017-03-02_09.txt \
+	                                                       ../Data/FSC_Final_2017-03-03_02.txt
+	python $^ $@ "Without CTF Refine" \
+		         "With CTF Refine" \
+				 "Comparsion Between CTF Refine or Not"
+
+../Figures/CTF_Refine_2017-03-04_10.png : FSC_Compare_4.py \
+	                                      ../Data/CTF_Refine_000_2017-03-04_10.txt \
+	                                      ../Data/CTF_Refine_001_2017-03-04_10.txt \
+	                                      ../Data/CTF_Refine_002_2017-03-04_10.txt \
+	                                      ../Data/CTF_Refine_003_2017-03-04_10.txt
+	python $^ $@ "Comparison Between CTF Refine or Not" \
+		         "Before CTF Refine" \
+				 "CTF Refine Round 1" \
+				 "CTF Refine Round 2" \
+				 "CTF Refine Round 3"
+
+../Figures/CTF_Refine_2017-03-05_01.png : FSC_Compare_4.py \
+	                                      ../Data/CTF_Refine_000_2017-03-05_01.txt \
+	                                      ../Data/CTF_Refine_001_2017-03-05_01.txt \
+	                                      ../Data/CTF_Refine_002_2017-03-05_01.txt \
+	                                      ../Data/CTF_Refine_003_2017-03-05_01.txt
+	python $^ $@ "Comparison Between CTF Refine or Not" \
+		         "Before CTF Refine" \
+				 "CTF Refine Round 1" \
+				 "CTF Refine Round 2" \
+				 "CTF Refine Round 3"
+
+../Figures/CTF_Refine_2017-03-05_06_VS_2017-03-05_07.png : FSC_Compare.py \
+	                                                       ../Data/FSC_Round_018_2017-03-05_06.txt \
+	                                                       ../Data/FSC_Round_018_2017-03-05_07.txt
+	python $^ $@ "CTF Refine" \
+		         "Without CTF Refine" \
+				 "Comparsion Between CTF Refine or Not"
+
+../Figures/Particle_Grading_Compare_2017-03-05_08_09.png : FSC_Compare.py \
+	                                                       ../Data/FSC_Final_2017-03-05_08.txt \
+	                                                       ../Data/FSC_Final_2017-03-05_09.txt
+	python $^ $@ "Without Particle Grading" \
+		         "With Particle Grading" \
+				 "Comparsion Between Particle Grading or Not"
+
+../Figures/Compare_RELION_2017-03-06_02.png : FSC_Compare_RELION.py \
+	                                          ../Data/C4_RELION_FSC.txt \
+											  ../Data/FSC_Final_2017-03-06_02.txt
+	python $^ $@ "RELION" \
+		         "Particle Grading" \
+				 "C4, 80K+, Compare with RELION with Particle Grading"
+
+../Figures/Compare_RELION_2017-03-06_04.png : FSC_Compare_RELION.py \
+	                                          ../Data/C4_RELION_FSC.txt \
+											  ../Data/FSC_Final_2017-03-06_04.txt
+	python $^ $@ "RELION" \
+		         "Particle Grading" \
+				 "C4, 80K+, Compare with RELION with Particle Grading"
+
+../Figures/Compare_RELION_Unmasked_2017-03-06_04.png : FSC_Compare_RELION_Unmasked.py \
+	                                                   ../Data/C4_RELION_FSC.txt \
+											           ../Data/FSC_Final_Unmasked_2017-03-06_04.txt
+	python $^ $@ "RELION" \
+		         "Particle Grading" \
+				 "C4, 80K+, Compare with RELION with Particle Grading"
+
+../Figures/Compare_RELION_Unmasked_2017-03-06_06.png : FSC_Compare_RELION_Unmasked.py \
+	                                                   ../Data/C4_RELION_FSC.txt \
+											           ../Data/FSC_Final_Unmasked_2017-03-06_06.txt
+	python $^ $@ "RELION" \
+		         "Particle Grading" \
+				 "C4, 80K+, Compare with RELION with Particle Grading"
+
+../Figures/Particle_Grading_Unmasked_2017-03-06_06_08.png : FSC_Compare.py \
+											                ../Data/FSC_Final_Unmasked_2017-03-06_06.txt \
+											                ../Data/FSC_Final_Unmasked_2017-03-06_08.txt
+	python $^ $@ "+ Particle Grading" \
+		         "- Particle Grading" \
+				 "FSC Comparison between Particle Grading or Not"
+
+clean :
+
+clean :
+	rm ../Figures/*.png
