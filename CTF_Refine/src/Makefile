@@ -18,7 +18,11 @@ all : ../Figures/CTF_Refine_2017-02-28_06.png \
 	  ../Figures/Compare_RELION_2017-03-06_04.png \
 	  ../Figures/Compare_RELION_Unmasked_2017-03-06_04.png \
 	  ../Figures/Compare_RELION_Unmasked_2017-03-06_06.png \
-	  ../Figures/Particle_Grading_Unmasked_2017-03-06_06_08.png
+	  ../Figures/Particle_Grading_Unmasked_2017-03-06_06_08.png \
+      ../Figures/CTF_Refinement_Unmasked_2017-03-06_06_09.png \
+      ../Figures/Particle_Filter_Based_Unmasked_2017-03-06_08_09.png \
+      ../Figures/Grid_Correction_Unmasked_2017-03-23_06_07.png \
+      ../Figures/Grid_Correction_Unmasked_2017-03-23_06_08.png
 
 ../Figures/CTF_Refine_2017-02-28_06.png : FSC_Compare.py \
 	                                      ../Data/CTF_Refine_000_2017-02-28_06.txt \
@@ -197,9 +201,35 @@ all : ../Figures/CTF_Refine_2017-02-28_06.png \
 											                ../Data/FSC_Final_Unmasked_2017-03-06_08.txt
 	python $^ $@ "+ Particle Grading" \
 		         "- Particle Grading" \
-				 "FSC Comparison between Particle Grading or Not"
+			     "FSC Comparison between Particle or Not"
+	
+../Figures/CTF_Refinement_Unmasked_2017-03-06_06_09.png : FSC_Compare.py \
+						                                  ../Data/FSC_Final_Unmasked_2017-03-06_06.txt \
+											              ../Data/FSC_Final_Unmasked_2017-03-06_09.txt
+	python $^ $@ "- CTF Refinement" \
+		         "+ CTF Refinement" \
+				 "FSC Comparison between CTF Refinement or Not"
 
-clean :
+../Figures/Particle_Filter_Based_Unmasked_2017-03-06_08_09.png : FSC_Compare.py \
+						                                          ../Data/FSC_Final_Unmasked_2017-03-06_08.txt \
+									          		              ../Data/FSC_Final_Unmasked_2017-03-06_09.txt
+	python $^ $@ "- CTF Refinement - Particle Grading" \
+		         "+ CTF Refinement + Particle Grading" \
+			 	 "FSC Comparison"
+	
+../Figures/Grid_Correction_Unmasked_2017-03-23_06_07.png : FSC_Compare.py \
+						                                          ../Data/FSC_Final_Unmasked_2017-03-23_06.txt \
+									          		              ../Data/FSC_Final_Unmasked_2017-03-23_07.txt
+	python $^ $@ "WT" \
+		         "Divide Kernel in Real Space" \
+				 "Grid Correction Comparison"
+	
+../Figures/Grid_Correction_Unmasked_2017-03-23_06_08.png : FSC_Compare.py \
+						                                          ../Data/FSC_Final_Unmasked_2017-03-23_06.txt \
+									          		              ../Data/FSC_Final_Unmasked_2017-03-23_08.txt
+	python $^ $@ "WT" \
+		         "Multiple Kernel in Real Space" \
+				 "Grid Correction Comparison"
 
 clean :
 	rm ../Figures/*.png
