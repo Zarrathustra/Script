@@ -26,7 +26,8 @@ all : ../Figures/CTF_Refine_2017-02-28_06.png \
       ../Figures/CTF_Refine_2017-04-09_12.png \
 	  ../Figures/CTF_Refine_2017-04-10_01.png \
 	  ../Figures/CTF_Refine_2017-04-10_05.png \
-	  ../Figures/CTF_Refine_2017-06-01_01.png
+	  ../Figures/CTF_Refine_2017-06-01_01.png \
+	  ../Figures/CTF_Refine_RF_2017-06-05.png
 
 ../Figures/CTF_Refine_2017-02-28_06.png : FSC_Compare.py \
 	                                      ../Data/CTF_Refine_000_2017-02-28_06.txt \
@@ -278,6 +279,24 @@ all : ../Figures/CTF_Refine_2017-02-28_06.png \
 				 "CTF Refine Round 1" \
 				 "CTF Refine Round 2" \
 				 "CTF Refine Round 3"
+
+../Figures/CTF_Refine_RF_2017-06-05.png : FSC_Compare_7.py \
+	                                      ../Data/CTF_Refine_Before_Refine_2017-06-05.txt \
+										  ../Data/CTF_Refine_RF_1_2017-06-05.txt \
+										  ../Data/CTF_Refine_RF_2_2017-06-05.txt \
+										  ../Data/CTF_Refine_RF_3_2017-06-05.txt \
+										  ../Data/CTF_Refine_RF_4_2017-06-05.txt \
+										  ../Data/CTF_Refine_RF_5_2017-06-05.txt \
+										  ../Data/CTF_Refine_RF_10_2017-06-05.txt
+	python $^ $@ "Comparison Various Defocus Factor" \
+	             "Before CTF Refine" \
+				 "CTF Refine Factor = 1" \
+				 "CTF Refine Factor = 2" \
+				 "CTF Refine Factor = 3" \
+				 "CTF Refine Factor = 4" \
+				 "CTF Refine Factor = 5" \
+				 "CTF Refine Factor = 10" \
+
 
 clean :
 	rm ../Figures/*.png
