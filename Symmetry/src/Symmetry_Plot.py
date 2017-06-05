@@ -8,9 +8,12 @@ filename = sys.argv[1]
 
 lines = open(filename, "r").readlines();
 
-X = [float(line.strip().split(" ")[0]) for line in lines]
-Y = [float(line.strip().split(" ")[1]) for line in lines]
-Z = [float(line.strip().split(" ")[2]) for line in lines]
+#X = [float(line.strip().split(" ")[0]) for line in lines]
+#Y = [float(line.strip().split(" ")[1]) for line in lines]
+#Z = [float(line.strip().split(" ")[2]) for line in lines]
+X = [float(line.strip().split()[0]) for line in lines]
+Y = [float(line.strip().split()[1]) for line in lines]
+Z = [float(line.strip().split()[2]) for line in lines]
 
 filename = os.path.splitext(filename)[-2]
 filename = filename.split("/")[-1]

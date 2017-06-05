@@ -22,7 +22,11 @@ all : ../Figures/CTF_Refine_2017-02-28_06.png \
       ../Figures/CTF_Refinement_Unmasked_2017-03-06_06_09.png \
       ../Figures/Particle_Filter_Based_Unmasked_2017-03-06_08_09.png \
       ../Figures/Grid_Correction_Unmasked_2017-03-23_06_07.png \
-      ../Figures/Grid_Correction_Unmasked_2017-03-23_06_08.png
+      ../Figures/Grid_Correction_Unmasked_2017-03-23_06_08.png \
+      ../Figures/CTF_Refine_2017-04-09_12.png \
+	  ../Figures/CTF_Refine_2017-04-10_01.png \
+	  ../Figures/CTF_Refine_2017-04-10_05.png \
+	  ../Figures/CTF_Refine_2017-06-01_01.png
 
 ../Figures/CTF_Refine_2017-02-28_06.png : FSC_Compare.py \
 	                                      ../Data/CTF_Refine_000_2017-02-28_06.txt \
@@ -229,7 +233,51 @@ all : ../Figures/CTF_Refine_2017-02-28_06.png \
 									          		              ../Data/FSC_Final_Unmasked_2017-03-23_08.txt
 	python $^ $@ "WT" \
 		         "Multiple Kernel in Real Space" \
-				 "Grid Correction Comparison"
+		         "Grid Correction Comparison"
+		
+../Figures/CTF_Refine_2017-04-09_12.png : FSC_Compare_4.py \
+	                                      ../Data/CTF_Refine_000_2017-04-09_12.txt \
+	                                      ../Data/CTF_Refine_001_2017-04-09_12.txt \
+	                                      ../Data/CTF_Refine_002_2017-04-09_12.txt \
+	                                      ../Data/CTF_Refine_003_2017-04-09_12.txt
+	python $^ $@ "Comparison Between CTF Refine or Not" \
+		         "Before CTF Refine" \
+				 "CTF Refine Round 1" \
+				 "CTF Refine Round 2" \
+				 "CTF Refine Round 3"
+		
+../Figures/CTF_Refine_2017-04-10_01.png : FSC_Compare_4.py \
+	                                      ../Data/CTF_Refine_000_2017-04-10_01.txt \
+	                                      ../Data/CTF_Refine_001_2017-04-10_01.txt \
+	                                      ../Data/CTF_Refine_002_2017-04-10_01.txt \
+	                                      ../Data/CTF_Refine_003_2017-04-10_01.txt
+	python $^ $@ "Comparison Between CTF Refine or Not" \
+		         "Before CTF Refine" \
+				 "CTF Refine Round 1" \
+				 "CTF Refine Round 2" \
+				 "CTF Refine Round 3"
+			
+../Figures/CTF_Refine_2017-04-10_05.png : FSC_Compare_4.py \
+	                                      ../Data/CTF_Refine_000_2017-04-10_05.txt \
+	                                      ../Data/CTF_Refine_001_2017-04-10_05.txt \
+	                                      ../Data/CTF_Refine_002_2017-04-10_05.txt \
+	                                      ../Data/CTF_Refine_003_2017-04-10_05.txt
+	python $^ $@ "Comparison Between CTF Refine or Not" \
+		         "Before CTF Refine" \
+				 "CTF Refine Round 1" \
+				 "CTF Refine Round 2" \
+				 "CTF Refine Round 3"
+		
+../Figures/CTF_Refine_2017-06-01_01.png : FSC_Compare_4.py \
+	                                      ../Data/CTF_Refine_000_2017-06-01_01.txt \
+	                                      ../Data/CTF_Refine_001_2017-06-01_01.txt \
+	                                      ../Data/CTF_Refine_002_2017-06-01_01.txt \
+	                                      ../Data/CTF_Refine_003_2017-06-01_01.txt
+	python $^ $@ "Comparison Between CTF Refine or Not" \
+		         "Before CTF Refine" \
+				 "CTF Refine Round 1" \
+				 "CTF Refine Round 2" \
+				 "CTF Refine Round 3"
 
 clean :
 	rm ../Figures/*.png

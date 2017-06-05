@@ -1,4 +1,5 @@
 from pylab import *
+import numpy as np
 
 import sys
 import os
@@ -34,14 +35,18 @@ plot(X_D, Z_D, label = sys.argv[10])
 plot(X_A, [0.5] * len(X_A), linestyle = 'dashed', c = 'green')
 plot(X_A, [0.143] * len(X_A), linestyle = 'dashed', c = 'green')
 
-xlabel('Resolution')
+xlabel(r'Spatial Frequency $\AA$')
 ylabel('FSC')
 
-xlim([0, X_A[len(X_A) - 1]])
+xlim([0, X_A[-1]])
 ylim([0, 1])
 
 legend()
 
 title(sys.argv[6])
+
+tic = np.linspace(0, X_A[-2], num = 5)
+
+xticks([int(x) for x in tic], ['{:.2f}'.format(Y_A[int(x)]) for x in tic])
 
 savefig(sys.argv[5], dpi = 300)

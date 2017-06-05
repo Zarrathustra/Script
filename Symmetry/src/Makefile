@@ -1,5 +1,14 @@
 all : C1 C2 C5 C6 CI CS C2V C5V C2H C5H S4 S10 \
-	  D2 D5 D2V D5V D2H D5H T TD TH O OH
+	  D2 D5 D2V D5V D2H D5H T TD TH O OH \
+	  Dir_C15_2017-04-20_01 \
+	  Dir_C15_2017-04-20_02 \
+	  Dir_C15_2017-04-20_03 \
+	  Dir_C15_2017-04-20_04 \
+	  Dir_C15_2017-04-20_05 \
+	  Dir_O_2017-04-20_06 \
+	  Dir_O_2017-04-20_07 \
+	  Dir_C2_2017-04-20_08 \
+	  Dir_C2_2017-04-21_01
 
 C1:
 	python Symmetry_Plot.py ../Data/C1.txt
@@ -69,6 +78,33 @@ O:
 
 OH:
 	python Symmetry_Plot.py ../Data/OH.txt
+
+Dir_C15_2017-04-20_01:
+	python Symmetry_Plot.py ../Data/Dir_C15_2017-04-20_01.txt
+
+Dir_C15_2017-04-20_02:
+	python Symmetry_Plot.py ../Data/Dir_C15_2017-04-20_02.txt
+
+Dir_C15_2017-04-20_03:
+	python Symmetry_Plot.py ../Data/Dir_C15_2017-04-20_03.txt
+
+Dir_C15_2017-04-20_04:
+	python Symmetry_Plot.py ../Data/Dir_C15_2017-04-20_04.txt
+
+Dir_C15_2017-04-20_05:
+	python Symmetry_Plot.py ../Data/Dir_C15_2017-04-20_05.txt
+
+Dir_O_2017-04-20_06:
+	python Symmetry_Plot.py ../Data/Dir_O_2017-04-20_06.txt
+
+Dir_O_2017-04-20_07:
+	python Symmetry_Plot.py ../Data/Dir_O_2017-04-20_07.txt
+
+Dir_C2_2017-04-20_08:
+	python Symmetry_Plot.py ../Data/Dir_C2_2017-04-20_08.txt
+
+Dir_C2_2017-04-21_01:
+	python Symmetry_Plot.py ../Data/Dir_C2_2017-04-21_01.txt
 
 clean:
 	rm ../Figures/*.png
